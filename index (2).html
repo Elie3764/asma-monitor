@@ -1,0 +1,2330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="description" content="ASMA MONITOR — Participez à notre enquête sur le suivi intelligent de l'asthme. Bracelet connecté & IA · SUPPTIC Cameroun 2025">
+<meta property="og:title" content="ASMA MONITOR — Ton avis peut sauver une vie 💓">
+<meta property="og:description" content="Participe à notre enquête sur le suivi de l'asthme par bracelet connecté IA. 5 minutes · 100% anonyme · PFE SUPPTIC Cameroun">
+<meta property="og:image" content="https://i.imgur.com/placeholder.png">
+<title>ASMA MONITOR — Participe à notre enquête 💓</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700;12..96,800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  // ══════════════════════════════════════════════
+  // CONFIGURATION EMAILJS — ASMA MONITOR PFE 2025
+  // ══════════════════════════════════════════════
+  // INSTRUCTIONS D'ACTIVATION :
+  // 1. Créez un compte sur https://www.emailjs.com (gratuit — 200 emails/mois)
+  // 2. Ajoutez un "Email Service" (Gmail avec lykaessoung@gmail.com)
+  // 3. Créez un "Email Template" avec les variables indiquées ci-dessous
+  // 4. Remplacez les 3 valeurs VOTRE_*** ci-dessous par vos vraies clés
+  // ══════════════════════════════════════════════
+  const EMAILJS_CONFIG = {
+    publicKey:  'Ti9W62YK8gWMENTr0',
+    serviceId:  'service_937a4wt',
+    templateId: 'template_pig4gbq'
+  };
+  // Template EmailJS suggéré (copiez dans l'éditeur EmailJS) :
+  // Sujet : [ASMA MONITOR] Nouvelle réponse - Profil {{profil}}
+  // Corps : Date: {{date}} | Profil: {{profil}} | Réponses: {{reponses}}
+  (function(){
+    if (EMAILJS_CONFIG.publicKey !== '') {
+      emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey });
+      console.log('✅ EmailJS initialisé');
+    } else {
+      console.warn('⚠️ EmailJS non configuré — voir instructions dans le code');
+    }
+  })();
+</script>
+<style>
+/* ═══════════════════════════════════════════════
+   ASMA MONITOR — Landing Page Campagne
+   Design : Éditorial vibrant · Accent médical chaud
+   Palette : Blanc lait · Rouge vif · Corail · Marine
+   Fonts : Bricolage Grotesque + Lora italique
+═══════════════════════════════════════════════ */
+:root{
+  --bg:       #faf9f7;
+  --white:    #ffffff;
+  --ink:      #0f172a;
+  --ink2:     #334155;
+  --ink3:     #94a3b8;
+  --red:      #dc2626;
+  --red2:     #ef4444;
+  --coral:    #f97316;
+  --teal:     #0d9488;
+  --navy:     #1e3a5f;
+  --purple:   #7c3aed;
+  --amber:    #d97706;
+  --green:    #16a34a;
+  --border:   #e2e8f0;
+  --font:     'Bricolage Grotesque', sans-serif;
+  --fontl:    'Lora', serif;
+  --fontm:    'JetBrains Mono', monospace;
+  --r:        16px;
+  --r2:       24px;
+  --max:      680px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);min-height:100vh;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+
+/* ── GRAIN OVERLAY ── */
+body::after{
+  content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  opacity:.4;
+}
+
+/* ── FLOATING SHARE BAR ── */
+.share-bar{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(250,249,247,.92);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  padding:12px 20px;
+  display:flex;align-items:center;gap:12px;
+}
+.sb-logo{display:flex;align-items:center;gap:8px;}
+.sb-logo-icon{width:32px;height:32px;background:var(--red);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.sb-logo-name{font-size:14px;font-weight:800;color:var(--ink);letter-spacing:.02em;}
+.sb-spacer{flex:1;}
+.sb-counter{font-family:var(--fontm);font-size:11px;color:var(--ink3);background:var(--border);padding:4px 10px;border-radius:20px;white-space:nowrap;}
+.sb-counter span{color:var(--red);font-weight:700;}
+.sb-share-btn{padding:8px 16px;background:var(--red);color:white;border:none;border-radius:10px;font-size:12px;font-weight:700;cursor:pointer;font-family:var(--font);display:flex;align-items:center;gap:6px;transition:all .15s;white-space:nowrap;}
+.sb-share-btn:hover{background:var(--red2);transform:translateY(-1px);}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;
+  display:flex;flex-direction:column;
+  padding-top:64px;
+  position:relative;
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(220,38,38,.08) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 90% 80%, rgba(249,115,22,.06) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 50% at 10% 60%, rgba(13,148,136,.05) 0%, transparent 50%);
+}
+/* Animated ECG line */
+.hero-ecg{
+  position:absolute;bottom:120px;left:0;right:0;z-index:0;
+  opacity:.06;overflow:hidden;
+}
+.hero-ecg svg{width:200%;animation:ecgScroll 8s linear infinite;}
+@keyframes ecgScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.hero-inner{
+  position:relative;z-index:1;
+  max-width:var(--max);
+  margin:0 auto;
+  padding:60px 24px 40px;
+  flex:1;
+  display:flex;flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+
+/* Badge SUPPTIC */
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 16px;
+  background:var(--white);
+  border:1.5px solid var(--border);
+  border-radius:30px;
+  font-size:12px;font-weight:700;
+  color:var(--ink2);
+  margin-bottom:28px;
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+  animation:badgePop .5s cubic-bezier(.34,1.56,.64,1) .2s both;
+}
+@keyframes badgePop{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+.badge-dot{width:8px;height:8px;border-radius:50%;background:var(--red);animation:badgePulse 1.5s infinite;}
+@keyframes badgePulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.8)}}
+
+/* Headline */
+.hero-kicker{
+  font-family:var(--fontl);
+  font-style:italic;
+  font-size:clamp(15px,3vw,18px);
+  color:var(--red);
+  margin-bottom:12px;
+  animation:fadeUp .5s ease .3s both;
+}
+.hero-h1{
+  font-size:clamp(36px,9vw,68px);
+  font-weight:800;
+  line-height:1.05;
+  letter-spacing:-.03em;
+  color:var(--ink);
+  margin-bottom:20px;
+  animation:fadeUp .5s ease .4s both;
+}
+.hero-h1 em{font-style:normal;color:var(--red);}
+.hero-h1 .underline{
+  position:relative;display:inline-block;
+}
+.hero-h1 .underline::after{
+  content:'';position:absolute;bottom:-4px;left:0;right:0;height:5px;
+  background:var(--coral);border-radius:3px;
+  animation:underlineGrow .6s ease .9s both;
+  transform-origin:left;
+}
+@keyframes underlineGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+.hero-sub{
+  font-size:clamp(15px,2.5vw,18px);
+  color:var(--ink2);
+  line-height:1.7;
+  max-width:500px;
+  margin-bottom:36px;
+  animation:fadeUp .5s ease .5s both;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+
+/* Pills stats */
+.hero-pills{
+  display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
+  margin-bottom:40px;
+  animation:fadeUp .5s ease .6s both;
+}
+.h-pill{
+  display:flex;align-items:center;gap:6px;
+  padding:8px 16px;
+  background:var(--white);
+  border:1.5px solid var(--border);
+  border-radius:30px;
+  font-size:13px;font-weight:600;
+  color:var(--ink2);
+  box-shadow:0 2px 6px rgba(0,0,0,.04);
+}
+
+/* ── CARTE CHOIX PROFIL ── */
+.profile-chooser{
+  width:100%;max-width:560px;
+  background:var(--white);
+  border:2px solid var(--border);
+  border-radius:var(--r2);
+  padding:28px;
+  box-shadow:0 8px 40px rgba(0,0,0,.08);
+  animation:fadeUp .5s ease .7s both;
+  text-align:left;
+}
+.pc-title{
+  font-size:14px;font-weight:700;
+  color:var(--ink);
+  margin-bottom:4px;
+}
+.pc-sub{
+  font-size:12px;color:var(--ink3);
+  margin-bottom:18px;
+  line-height:1.5;
+}
+.profiles-grid{
+  display:flex;flex-direction:column;gap:10px;
+}
+.profile-card{
+  display:flex;align-items:center;gap:14px;
+  padding:16px 18px;
+  border:2px solid var(--border);
+  border-radius:var(--r);
+  cursor:pointer;
+  transition:all .2s;
+  background:var(--bg);
+  position:relative;
+  overflow:hidden;
+}
+.profile-card::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:4px;
+  border-radius:0 3px 3px 0;
+  transition:all .2s;
+}
+.p-patient::before{background:var(--red);}
+.p-parent::before{background:var(--coral);}
+.p-pro::before{background:var(--teal);}
+.p-curious::before{background:var(--purple);}
+
+.profile-card:hover{transform:translateX(4px);box-shadow:0 4px 20px rgba(0,0,0,.08);}
+.p-patient:hover{border-color:rgba(220,38,38,.3);background:rgba(220,38,38,.03);}
+.p-parent:hover{border-color:rgba(249,115,22,.3);background:rgba(249,115,22,.03);}
+.p-pro:hover{border-color:rgba(13,148,136,.3);background:rgba(13,148,136,.03);}
+.p-curious:hover{border-color:rgba(124,58,237,.3);background:rgba(124,58,237,.03);}
+
+.profile-card.active{transform:translateX(4px);}
+.p-patient.active{border-color:var(--red);background:rgba(220,38,38,.04);box-shadow:0 0 0 3px rgba(220,38,38,.1);}
+.p-parent.active{border-color:var(--coral);background:rgba(249,115,22,.04);box-shadow:0 0 0 3px rgba(249,115,22,.1);}
+.p-pro.active{border-color:var(--teal);background:rgba(13,148,136,.04);box-shadow:0 0 0 3px rgba(13,148,136,.1);}
+.p-curious.active{border-color:var(--purple);background:rgba(124,58,237,.04);box-shadow:0 0 0 3px rgba(124,58,237,.1);}
+
+.pc-icon{
+  width:44px;height:44px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;flex-shrink:0;
+  transition:transform .2s;
+}
+.profile-card:hover .pc-icon{transform:scale(1.1);}
+.p-patient .pc-icon{background:rgba(220,38,38,.1);}
+.p-parent  .pc-icon{background:rgba(249,115,22,.1);}
+.p-pro     .pc-icon{background:rgba(13,148,136,.1);}
+.p-curious .pc-icon{background:rgba(124,58,237,.1);}
+
+.pc-info{flex:1;}
+.pc-name{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:3px;}
+.pc-desc{font-size:12px;color:var(--ink3);line-height:1.4;}
+
+.pc-arrow{
+  width:28px;height:28px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;color:var(--ink3);
+  border:1.5px solid var(--border);
+  transition:all .2s;flex-shrink:0;
+}
+.profile-card:hover .pc-arrow,.profile-card.active .pc-arrow{
+  color:white;border-color:transparent;
+}
+.p-patient:hover .pc-arrow,.p-patient.active .pc-arrow{background:var(--red);}
+.p-parent:hover  .pc-arrow,.p-parent.active  .pc-arrow{background:var(--coral);}
+.p-pro:hover     .pc-arrow,.p-pro.active     .pc-arrow{background:var(--teal);}
+.p-curious:hover .pc-arrow,.p-curious.active .pc-arrow{background:var(--purple);}
+
+/* ── SECTION CONDITIONNELLE (sous la carte) ── */
+.profile-detail{
+  width:100%;max-width:560px;
+  display:none;
+  animation:detailIn .35s cubic-bezier(.4,0,.2,1);
+}
+.profile-detail.show{display:block;}
+@keyframes detailIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+.detail-card{
+  border-radius:var(--r2);
+  padding:28px;
+  margin-top:14px;
+  border:2px solid;
+}
+.detail-patient{background:rgba(220,38,38,.04);border-color:rgba(220,38,38,.2);}
+.detail-parent {background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2);}
+.detail-pro    {background:rgba(13,148,136,.04);border-color:rgba(13,148,136,.2);}
+.detail-curious{background:rgba(124,58,237,.04);border-color:rgba(124,58,237,.2);}
+
+.detail-top{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+.detail-badge{
+  padding:4px 12px;border-radius:20px;
+  font-size:10px;font-weight:800;
+  letter-spacing:.08em;text-transform:uppercase;
+}
+.detail-patient .detail-badge{background:rgba(220,38,38,.15);color:var(--red);}
+.detail-parent  .detail-badge{background:rgba(249,115,22,.15);color:var(--coral);}
+.detail-pro     .detail-badge{background:rgba(13,148,136,.15);color:var(--teal);}
+.detail-curious .detail-badge{background:rgba(124,58,237,.15);color:var(--purple);}
+
+.detail-title{font-size:16px;font-weight:800;color:var(--ink);}
+.detail-msg{
+  font-size:14px;color:var(--ink2);line-height:1.75;
+  margin-bottom:18px;
+  font-family:var(--fontl);
+  font-style:italic;
+}
+
+/* Points spécifiques */
+.detail-points{display:flex;flex-direction:column;gap:8px;margin-bottom:22px;}
+.dp{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;background:rgba(255,255,255,.7);border-radius:10px;}
+.dp-icon{font-size:16px;flex-shrink:0;margin-top:1px;}
+.dp-text{font-size:13px;color:var(--ink2);line-height:1.5;}
+.dp-text strong{color:var(--ink);font-weight:700;}
+
+/* CTA bouton */
+.cta-btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  width:100%;padding:17px 24px;
+  border:none;border-radius:14px;
+  font-size:15px;font-weight:800;
+  cursor:pointer;font-family:var(--font);
+  letter-spacing:.01em;
+  transition:all .2s;
+  text-decoration:none;
+}
+.cta-patient{background:var(--red);color:white;box-shadow:0 6px 24px rgba(220,38,38,.3);}
+.cta-patient:hover{background:var(--red2);transform:translateY(-2px);box-shadow:0 10px 32px rgba(220,38,38,.4);}
+.cta-parent{background:var(--coral);color:white;box-shadow:0 6px 24px rgba(249,115,22,.3);}
+.cta-parent:hover{background:#ea6c0a;transform:translateY(-2px);}
+.cta-pro{background:var(--teal);color:white;box-shadow:0 6px 24px rgba(13,148,136,.3);}
+.cta-pro:hover{background:#0b7a70;transform:translateY(-2px);}
+.cta-curious{background:var(--purple);color:white;box-shadow:0 6px 24px rgba(124,58,237,.3);}
+.cta-curious:hover{background:#6d28d9;transform:translateY(-2px);}
+
+.cta-sub{
+  text-align:center;font-size:11px;
+  color:var(--ink3);margin-top:10px;
+}
+
+/* ── STATS SECTION ── */
+.stats-section{
+  background:var(--ink);
+  padding:60px 24px;
+  position:relative;overflow:hidden;
+}
+.stats-section::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 80% at 50% 50%, rgba(220,38,38,.08) 0%, transparent 60%);
+}
+.stats-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:1;}
+.stats-title{
+  font-family:var(--fontl);
+  font-style:italic;
+  font-size:clamp(20px,4vw,28px);
+  color:white;
+  text-align:center;
+  margin-bottom:32px;
+}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.stat-card{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--r);
+  padding:22px 16px;
+  text-align:center;
+}
+.stat-num{
+  font-family:var(--fontm);
+  font-size:clamp(28px,6vw,42px);
+  font-weight:500;
+  color:var(--red);
+  display:block;
+  line-height:1;
+  margin-bottom:8px;
+}
+.stat-lbl{font-size:12px;color:rgba(255,255,255,.5);line-height:1.4;}
+
+/* ── COMMENT ÇA MARCHE ── */
+.how-section{padding:72px 24px;background:var(--white);}
+.how-inner{max-width:var(--max);margin:0 auto;}
+.section-eyebrow{
+  font-size:11px;font-weight:800;
+  color:var(--red);text-transform:uppercase;
+  letter-spacing:.12em;margin-bottom:12px;
+  display:flex;align-items:center;gap:8px;
+}
+.section-eyebrow::before{content:'';width:24px;height:2px;background:var(--red);border-radius:1px;}
+.section-h{
+  font-family:var(--fontl);
+  font-style:italic;
+  font-size:clamp(24px,5vw,36px);
+  color:var(--ink);
+  margin-bottom:36px;
+  line-height:1.2;
+}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.step-card{padding:22px;background:var(--bg);border:1.5px solid var(--border);border-radius:var(--r);}
+.step-num{
+  width:36px;height:36px;
+  border-radius:10px;
+  background:var(--red);
+  color:white;
+  font-size:14px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:14px;
+  font-family:var(--fontm);
+}
+.step-icon{font-size:26px;margin-bottom:10px;}
+.step-title{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:6px;}
+.step-desc{font-size:12px;color:var(--ink3);line-height:1.6;}
+
+/* ── TEMOIGNAGES ── */
+.quotes-section{padding:72px 24px;background:var(--bg);}
+.quotes-inner{max-width:var(--max);margin:0 auto;}
+.quotes-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px;}
+.quote-card{
+  background:var(--white);
+  border:1.5px solid var(--border);
+  border-radius:var(--r);
+  padding:22px;
+}
+.quote-stars{color:#f59e0b;font-size:12px;margin-bottom:10px;}
+.quote-text{
+  font-family:var(--fontl);
+  font-style:italic;
+  font-size:14px;
+  color:var(--ink2);
+  line-height:1.7;
+  margin-bottom:14px;
+}
+.quote-author{display:flex;align-items:center;gap:10px;}
+.qa-avatar{
+  width:32px;height:32px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;font-weight:700;color:white;
+  flex-shrink:0;
+}
+.qa-name{font-size:12px;font-weight:700;color:var(--ink);}
+.qa-role{font-size:11px;color:var(--ink3);}
+
+/* ── SHARE CTA FINAL ── */
+.final-cta{
+  padding:80px 24px;
+  background:linear-gradient(135deg,var(--ink) 0%,#1e1b4b 100%);
+  text-align:center;
+  position:relative;overflow:hidden;
+}
+.final-cta::before{
+  content:'💓';
+  position:absolute;
+  font-size:300px;
+  opacity:.03;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  line-height:1;
+}
+.final-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:1;}
+.final-h{
+  font-family:var(--fontl);
+  font-style:italic;
+  font-size:clamp(26px,5vw,40px);
+  color:white;
+  margin-bottom:12px;
+  line-height:1.2;
+}
+.final-sub{font-size:15px;color:rgba(255,255,255,.6);margin-bottom:36px;line-height:1.7;}
+.final-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.final-btn-main{
+  padding:16px 32px;
+  background:var(--red);
+  color:white;border:none;border-radius:14px;
+  font-size:15px;font-weight:800;cursor:pointer;
+  font-family:var(--font);
+  transition:all .2s;
+  box-shadow:0 6px 24px rgba(220,38,38,.4);
+}
+.final-btn-main:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(220,38,38,.5);}
+.final-btn-share{
+  padding:16px 28px;
+  background:rgba(255,255,255,.1);
+  color:white;border:1.5px solid rgba(255,255,255,.2);
+  border-radius:14px;
+  font-size:15px;font-weight:700;cursor:pointer;
+  font-family:var(--font);
+  transition:all .2s;
+  display:flex;align-items:center;gap:8px;
+}
+.final-btn-share:hover{background:rgba(255,255,255,.15);}
+
+/* ── MESSAGES À PARTAGER ── */
+.share-modal{
+  position:fixed;inset:0;z-index:500;
+  background:rgba(15,23,42,.7);
+  backdrop-filter:blur(8px);
+  display:none;align-items:flex-end;justify-content:center;
+  padding:16px;
+}
+.share-modal.open{display:flex;animation:fadeModal .2s ease;}
+@keyframes fadeModal{from{opacity:0}to{opacity:1}}
+.share-sheet{
+  background:var(--white);
+  border-radius:24px;
+  width:100%;max-width:560px;
+  padding:24px;
+  animation:slideUp .3s cubic-bezier(.4,0,.2,1);
+  max-height:90vh;overflow-y:auto;
+}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:none}}
+.ss-handle{width:40px;height:4px;background:var(--border);border-radius:2px;margin:0 auto 20px;}
+.ss-title{font-size:18px;font-weight:800;margin-bottom:18px;}
+.ss-tabs{display:flex;gap:8px;margin-bottom:20px;overflow-x:auto;padding-bottom:2px;}
+.ss-tab{
+  padding:7px 16px;border-radius:20px;border:1.5px solid var(--border);
+  font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;
+  background:var(--bg);color:var(--ink2);transition:all .15s;flex-shrink:0;
+}
+.ss-tab.active{background:var(--red);color:white;border-color:var(--red);}
+.ss-message{
+  background:var(--bg);border:1.5px solid var(--border);border-radius:var(--r);
+  padding:16px;
+  font-size:13px;color:var(--ink2);line-height:1.75;
+  white-space:pre-wrap;word-break:break-word;
+  min-height:120px;
+  font-family:var(--fontm);font-size:12px;
+  margin-bottom:14px;
+}
+.ss-actions{display:flex;gap:8px;}
+.ss-copy{
+  flex:1;padding:13px;background:var(--red);color:white;border:none;
+  border-radius:12px;font-size:13px;font-weight:700;cursor:pointer;
+  font-family:var(--font);transition:all .15s;
+}
+.ss-copy:hover{background:var(--red2);}
+.ss-copy.copied{background:var(--green);}
+.ss-wa{
+  padding:13px 18px;background:var(--bg);border:1.5px solid var(--border);
+  border-radius:12px;font-size:13px;font-weight:700;cursor:pointer;
+  font-family:var(--font);transition:all .15s;
+  display:flex;align-items:center;gap:6px;
+}
+.ss-wa:hover{background:#25d366;color:white;border-color:#25d366;}
+.ss-close{
+  width:40px;height:40px;background:var(--bg);border:1.5px solid var(--border);
+  border-radius:50%;font-size:18px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+}
+
+/* ── FOOTER ── */
+footer{
+  padding:32px 24px;
+  background:var(--ink);
+  text-align:center;
+}
+.footer-logo{font-size:14px;font-weight:800;color:white;letter-spacing:.06em;margin-bottom:6px;}
+.footer-sub{font-size:11px;color:rgba(255,255,255,.3);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:600px){
+  .stats-grid{grid-template-columns:1fr 1fr;}
+  .steps-grid{grid-template-columns:1fr;}
+  .quotes-grid{grid-template-columns:1fr;}
+  .stats-grid .stat-card:last-child{grid-column:span 2;}
+  .hero-inner{padding:40px 20px 32px;}
+}
+
+/* ══════════════════════════════════════
+   FORMULAIRES PAR PROFIL
+══════════════════════════════════════ */
+.form-wrapper{
+  margin-top:20px;
+  border-top:2px dashed;
+  padding-top:22px;
+}
+.detail-patient .form-wrapper{border-color:rgba(220,38,38,.25);}
+.detail-parent  .form-wrapper{border-color:rgba(249,115,22,.25);}
+.detail-pro     .form-wrapper{border-color:rgba(13,148,136,.25);}
+.detail-curious .form-wrapper{border-color:rgba(124,58,237,.25);}
+
+.form-title{
+  font-size:13px;font-weight:800;
+  color:var(--ink);
+  display:flex;align-items:center;gap:8px;
+  margin-bottom:18px;
+}
+.form-step-indicator{
+  display:flex;gap:6px;align-items:center;
+  margin-bottom:20px;
+}
+.fsi-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--border);
+  transition:all .3s;
+}
+.fsi-dot.active{width:24px;border-radius:4px;}
+.detail-patient .fsi-dot.active{background:var(--red);}
+.detail-parent  .fsi-dot.active{background:var(--coral);}
+.detail-pro     .fsi-dot.active{background:var(--teal);}
+.detail-curious .fsi-dot.active{background:var(--purple);}
+.fsi-dot.done{background:var(--green);}
+
+.form-section{
+  display:none;
+  animation:formIn .3s ease;
+}
+.form-section.active{display:block;}
+@keyframes formIn{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}
+
+.form-section-title{
+  font-size:12px;font-weight:700;
+  color:var(--ink3);text-transform:uppercase;letter-spacing:.1em;
+  margin-bottom:14px;
+  display:flex;align-items:center;gap:6px;
+}
+.form-section-title::after{content:'';flex:1;height:1px;background:var(--border);}
+
+.form-group{
+  margin-bottom:16px;
+}
+.form-label{
+  font-size:13px;font-weight:600;color:var(--ink);
+  display:block;margin-bottom:6px;line-height:1.4;
+}
+.form-label .req{color:var(--red);margin-left:2px;}
+
+.form-input,
+.form-select,
+.form-textarea{
+  width:100%;
+  padding:11px 14px;
+  border:1.5px solid var(--border);
+  border-radius:10px;
+  font-size:14px;font-family:var(--font);
+  color:var(--ink);background:white;
+  transition:border-color .2s,box-shadow .2s;
+  outline:none;
+  -webkit-appearance:none;
+}
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus{
+  border-color:var(--focus-color, var(--red));
+  box-shadow:0 0 0 3px var(--focus-shadow, rgba(220,38,38,.12));
+}
+.detail-patient{--focus-color:var(--red);--focus-shadow:rgba(220,38,38,.12);}
+.detail-parent {--focus-color:var(--coral);--focus-shadow:rgba(249,115,22,.12);}
+.detail-pro    {--focus-color:var(--teal);--focus-shadow:rgba(13,148,136,.12);}
+.detail-curious{--focus-color:var(--purple);--focus-shadow:rgba(124,58,237,.12);}
+
+.form-textarea{resize:vertical;min-height:80px;}
+.form-select{
+  background-image:url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2394a3b8' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 14px center;
+  padding-right:36px;
+  cursor:pointer;
+}
+
+/* Radio & Checkbox group */
+.form-radio-group,
+.form-check-group{
+  display:flex;flex-direction:column;gap:8px;
+}
+.form-radio-group.horizontal{
+  flex-direction:row;flex-wrap:wrap;gap:8px;
+}
+.radio-item,
+.check-item{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 14px;
+  border:1.5px solid var(--border);
+  border-radius:10px;
+  cursor:pointer;
+  transition:all .15s;
+  background:white;
+  font-size:13px;color:var(--ink2);
+}
+.radio-item:hover,.check-item:hover{
+  border-color:var(--focus-color, var(--red));
+  background:var(--focus-shadow,rgba(220,38,38,.04));
+}
+.radio-item input,.check-item input{
+  width:16px;height:16px;
+  accent-color:var(--focus-color, var(--red));
+  cursor:pointer;flex-shrink:0;
+}
+.radio-item.selected,.check-item.selected{
+  border-color:var(--focus-color, var(--red));
+  background:var(--focus-shadow,rgba(220,38,38,.06));
+  font-weight:600;color:var(--ink);
+}
+
+/* Scale rating */
+.scale-group{
+  display:flex;gap:6px;align-items:center;
+}
+.scale-btn{
+  flex:1;padding:10px 4px;
+  border:1.5px solid var(--border);
+  border-radius:8px;
+  background:white;
+  font-size:13px;font-weight:600;
+  color:var(--ink3);
+  cursor:pointer;
+  font-family:var(--font);
+  transition:all .15s;
+  text-align:center;
+}
+.scale-btn:hover{border-color:var(--focus-color,var(--red));color:var(--ink);}
+.scale-btn.selected{
+  background:var(--focus-color,var(--red));
+  border-color:var(--focus-color,var(--red));
+  color:white;
+}
+.scale-labels{
+  display:flex;justify-content:space-between;
+  font-size:10px;color:var(--ink3);
+  margin-top:5px;padding:0 2px;
+}
+
+/* Nav buttons */
+.form-nav{
+  display:flex;gap:10px;margin-top:22px;
+  align-items:center;
+}
+.btn-prev{
+  padding:11px 20px;
+  border:1.5px solid var(--border);
+  border-radius:10px;
+  background:white;
+  font-size:13px;font-weight:700;
+  cursor:pointer;font-family:var(--font);
+  color:var(--ink2);
+  transition:all .15s;
+  display:flex;align-items:center;gap:6px;
+}
+.btn-prev:hover{border-color:var(--ink3);}
+.btn-next,.btn-submit{
+  flex:1;
+  padding:13px 20px;
+  border:none;border-radius:10px;
+  font-size:14px;font-weight:800;
+  cursor:pointer;font-family:var(--font);
+  color:white;
+  transition:all .2s;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.detail-patient .btn-next,.detail-patient .btn-submit{background:var(--red);box-shadow:0 4px 16px rgba(220,38,38,.25);}
+.detail-parent  .btn-next,.detail-parent  .btn-submit{background:var(--coral);box-shadow:0 4px 16px rgba(249,115,22,.25);}
+.detail-pro     .btn-next,.detail-pro     .btn-submit{background:var(--teal);box-shadow:0 4px 16px rgba(13,148,136,.25);}
+.detail-curious .btn-next,.detail-curious .btn-submit{background:var(--purple);box-shadow:0 4px 16px rgba(124,58,237,.25);}
+.btn-next:hover,.btn-submit:hover{transform:translateY(-1px);filter:brightness(1.08);}
+
+.form-progress-text{
+  font-size:11px;color:var(--ink3);font-family:var(--fontm);
+  text-align:right;margin-bottom:10px;
+}
+
+/* Success state */
+.form-success{
+  display:none;
+  flex-direction:column;align-items:center;
+  text-align:center;padding:24px 16px;
+  animation:formIn .4s ease;
+}
+.form-success.show{display:flex;}
+.success-icon{
+  width:64px;height:64px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:28px;
+  margin-bottom:16px;
+  animation:successPop .5s cubic-bezier(.34,1.56,.64,1);
+}
+@keyframes successPop{from{transform:scale(0)}to{transform:scale(1)}}
+.detail-patient .success-icon{background:rgba(220,38,38,.12);}
+.detail-parent  .success-icon{background:rgba(249,115,22,.12);}
+.detail-pro     .success-icon{background:rgba(13,148,136,.12);}
+.detail-curious .success-icon{background:rgba(124,58,237,.12);}
+.success-title{font-size:18px;font-weight:800;color:var(--ink);margin-bottom:8px;}
+.success-sub{font-size:13px;color:var(--ink2);line-height:1.6;max-width:320px;}
+.success-share{
+  margin-top:16px;
+  padding:12px 24px;
+  border:none;border-radius:10px;
+  font-size:13px;font-weight:700;
+  cursor:pointer;font-family:var(--font);
+  color:white;
+  transition:all .2s;
+}
+.detail-patient .success-share{background:var(--red);}
+.detail-parent  .success-share{background:var(--coral);}
+.detail-pro     .success-share{background:var(--teal);}
+.detail-curious .success-share{background:var(--purple);}
+
+/* Error state */
+.field-error{
+  font-size:11px;color:var(--red);
+  margin-top:4px;
+  display:none;
+}
+.field-error.show{display:block;}
+.form-input.error,.form-select.error,.form-textarea.error{border-color:var(--red)!important;}
+
+</style>
+</head>
+<body>
+
+<!-- ════════ SHARE BAR ════════ -->
+<div class="share-bar">
+  <div class="sb-logo">
+    <div class="sb-logo-icon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2C8.5 2 5.5 4 4 7c-1 2-1 4.5 0 6.5L12 22l8-8.5c1-2 1-4.5 0-6.5C18.5 4 15.5 2 12 2z" fill="white"/>
+        <path d="M7 13h2l1.5-4 2 7 1.5-5H17" stroke="#dc2626" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <span class="sb-logo-name">ASMA MONITOR</span>
+  </div>
+  <div class="sb-spacer"></div>
+  <div class="sb-counter"><span id="counter-num">247</span> participants</div>
+  <button class="sb-share-btn" onclick="openShare()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="white" stroke-width="2"/><circle cx="6" cy="12" r="3" stroke="white" stroke-width="2"/><circle cx="18" cy="19" r="3" stroke="white" stroke-width="2"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+    Partager
+  </button>
+</div>
+
+<!-- ════════ HERO ════════ -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ecg">
+    <svg viewBox="0 0 800 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polyline points="0,40 80,40 100,15 115,65 130,40 180,40 220,40 240,10 255,70 270,40 320,40 360,40 380,12 395,68 410,40 460,40 500,40 520,14 535,66 550,40 600,40 640,40 660,11 675,69 690,40 740,40 780,40 800,40" stroke="#dc2626" stroke-width="2" fill="none"/>
+      <polyline points="800,40 880,40 900,15 915,65 930,40 980,40 1020,40 1040,10 1055,70 1070,40 1120,40 1160,40 1180,12 1195,68 1210,40 1260,40 1300,40 1320,14 1335,66 1350,40 1400,40 1440,40 1460,11 1475,69 1490,40 1540,40 1580,40 1600,40" stroke="#dc2626" stroke-width="2" fill="none"/>
+    </svg>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <div class="badge-dot"></div>
+      🎓 PFE SUPPTIC Cameroun 2025 · En cours de collecte
+    </div>
+
+    <div class="hero-kicker">Ton avis peut tout changer</div>
+
+    <h1 class="hero-h1">
+      Aide-nous à<br>
+      <span class="underline">sauver des vies</span><br>
+      <em>💓</em>
+    </h1>
+
+    <p class="hero-sub">
+      Nous développons <strong>ASMA MONITOR</strong> — un bracelet connecté intelligent capable de <strong>prédire et prévenir</strong> les crises d'asthme. Ton témoignage est essentiel pour améliorer notre dispositif.
+    </p>
+
+    <div class="hero-pills">
+      <span class="h-pill">⏱ 5 minutes seulement</span>
+      <span class="h-pill">🔒 100% anonyme</span>
+      <span class="h-pill">🧠 Questions adaptées à ton profil</span>
+    </div>
+
+    <!-- SÉLECTEUR DE PROFIL -->
+    <div class="profile-chooser">
+      <div class="pc-title">Qui es-tu ? Choisis ton profil 👇</div>
+      <div class="pc-sub">Les questions s'adaptent automatiquement selon ton lien avec l'asthme.</div>
+      <div class="profiles-grid">
+
+        <div class="profile-card p-patient" onclick="selectProfile('patient')">
+          <div class="pc-icon">🫁</div>
+          <div class="pc-info">
+            <div class="pc-name">Je suis patient(e) asthmatique</div>
+            <div class="pc-desc">Je souffre moi-même d'asthme ou de symptômes respiratoires</div>
+          </div>
+          <div class="pc-arrow">→</div>
+        </div>
+
+        <div class="profile-card p-parent" onclick="selectProfile('parent')">
+          <div class="pc-icon">👨‍👧</div>
+          <div class="pc-info">
+            <div class="pc-name">Parent ou aidant d'un asthmatique</div>
+            <div class="pc-desc">Mon enfant, conjoint ou proche souffre d'asthme</div>
+          </div>
+          <div class="pc-arrow">→</div>
+        </div>
+
+        <div class="profile-card p-pro" onclick="selectProfile('pro')">
+          <div class="pc-icon">👨‍⚕️</div>
+          <div class="pc-info">
+            <div class="pc-name">Professionnel de santé</div>
+            <div class="pc-desc">Médecin, infirmier, pneumologue, pharmacien…</div>
+          </div>
+          <div class="pc-arrow">→</div>
+        </div>
+
+        <div class="profile-card p-curious" onclick="selectProfile('curious')">
+          <div class="pc-icon">🔍</div>
+          <div class="pc-info">
+            <div class="pc-name">Curieux — pas directement concerné</div>
+            <div class="pc-desc">Intérêt général, étudiant, citoyen engagé…</div>
+          </div>
+          <div class="pc-arrow">→</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── DÉTAIL PATIENT ── -->
+    <div class="profile-detail" id="detail-patient">
+      <div class="detail-card detail-patient">
+        <div class="detail-top">
+          <div class="pc-icon" style="background:rgba(220,38,38,.1);font-size:20px;width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;">🫁</div>
+          <div>
+            <div class="detail-badge">Parcours Patient</div>
+            <div class="detail-title" style="margin-top:4px">Ton vécu est précieux</div>
+          </div>
+        </div>
+        <div class="detail-msg">"Toi mieux que quiconque tu sais ce que c'est de vivre avec l'asthme. Aide-nous à concevoir un dispositif qui te ressemble."</div>
+        <div class="detail-points">
+          <div class="dp"><div class="dp-icon">🔮</div><div class="dp-text"><strong>Prédiction de crise</strong> — Le bracelet t'alertera avant que la crise ne survienne</div></div>
+          <div class="dp"><div class="dp-icon">⏰</div><div class="dp-text"><strong>Rappels intelligents</strong> — Médicaments, RDV médical, activité physique adaptée</div></div>
+          <div class="dp"><div class="dp-icon">🚨</div><div class="dp-text"><strong>Alerte d'urgence GPS</strong> — Tes proches et ton médecin alertés automatiquement</div></div>
+          <div class="dp"><div class="dp-icon">💬</div><div class="dp-text"><strong>Communauté</strong> — Échange avec d'autres patients qui vivent la même chose</div></div>
+          <div class="dp"><div class="dp-icon">📊</div><div class="dp-text">Le questionnaire porte sur tes <strong>symptômes, traitements, fréquence des crises</strong> et tes besoins technologiques</div></div>
+        </div>
+        <!-- ══ FORMULAIRE PATIENT ══ -->
+        <div class="form-wrapper">
+          <div class="form-title">📋 Questionnaire — Parcours Patient</div>
+
+          <!-- Indicateur de progression -->
+          <div class="form-step-indicator" id="fsi-patient">
+            <div class="fsi-dot active" id="fsi-patient-1"></div>
+            <div class="fsi-dot" id="fsi-patient-2"></div>
+            <div class="fsi-dot" id="fsi-patient-3"></div>
+            <div class="fsi-dot" id="fsi-patient-4"></div>
+            <span style="font-size:11px;color:var(--ink3);font-family:var(--fontm);margin-left:6px" id="fp-progress">Étape 1 / 4</span>
+          </div>
+
+          <!-- ÉTAPE 1 : Profil -->
+          <div class="form-section active" id="fp-s1">
+            <div class="form-section-title">👤 Votre profil</div>
+            <div class="form-group">
+              <label class="form-label">Votre tranche d'âge <span class="req">*</span></label>
+              <div class="form-radio-group horizontal" id="fp-age">
+                <label class="radio-item"><input type="radio" name="fp_age" value="<18"> Moins de 18 ans</label>
+                <label class="radio-item"><input type="radio" name="fp_age" value="18-34"> 18 – 34 ans</label>
+                <label class="radio-item"><input type="radio" name="fp_age" value="35-54"> 35 – 54 ans</label>
+                <label class="radio-item"><input type="radio" name="fp_age" value="55+"> 55 ans et +</label>
+              </div>
+              <div class="field-error" id="fp-age-err">Veuillez sélectionner votre tranche d'âge.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Depuis combien de temps êtes-vous diagnostiqué(e) asthmatique ? <span class="req">*</span></label>
+              <select class="form-select" id="fp-duree">
+                <option value="">— Choisir —</option>
+                <option>Moins d'un an</option>
+                <option>1 – 5 ans</option>
+                <option>5 – 10 ans</option>
+                <option>Plus de 10 ans</option>
+              </select>
+              <div class="field-error" id="fp-duree-err">Veuillez renseigner ce champ.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Type d'asthme diagnostiqué</label>
+              <div class="form-radio-group" id="fp-type">
+                <label class="radio-item"><input type="radio" name="fp_type" value="allergique"> Allergique (pollen, poussière…)</label>
+                <label class="radio-item"><input type="radio" name="fp_type" value="effort"> À l'effort</label>
+                <label class="radio-item"><input type="radio" name="fp_type" value="professionnel"> Professionnel</label>
+                <label class="radio-item"><input type="radio" name="fp_type" value="non précisé"> Non précisé / Je ne sais pas</label>
+              </div>
+            </div>
+            <div class="form-nav">
+              <button class="btn-next" onclick="formNext('patient',1)">Suivant →</button>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 2 : Symptômes & crises -->
+          <div class="form-section" id="fp-s2">
+            <div class="form-section-title">🫁 Symptômes & crises</div>
+            <div class="form-group">
+              <label class="form-label">À quelle fréquence avez-vous des crises d'asthme ? <span class="req">*</span></label>
+              <div class="form-radio-group" id="fp-freq">
+                <label class="radio-item"><input type="radio" name="fp_freq" value="quotidienne"> Quasi quotidiennement</label>
+                <label class="radio-item"><input type="radio" name="fp_freq" value="hebdomadaire"> Plusieurs fois par semaine</label>
+                <label class="radio-item"><input type="radio" name="fp_freq" value="mensuelle"> Quelques fois par mois</label>
+                <label class="radio-item"><input type="radio" name="fp_freq" value="rare"> Rarement (quelques fois par an)</label>
+              </div>
+              <div class="field-error" id="fp-freq-err">Veuillez sélectionner une fréquence.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Quels sont vos principaux déclencheurs ? (plusieurs choix possibles)</label>
+              <div class="form-check-group" id="fp-triggers">
+                <label class="check-item"><input type="checkbox" value="air"> Pollution / qualité de l'air</label>
+                <label class="check-item"><input type="checkbox" value="effort"> Effort physique</label>
+                <label class="check-item"><input type="checkbox" value="allergenes"> Allergènes (pollen, acariens…)</label>
+                <label class="check-item"><input type="checkbox" value="stress"> Stress / émotions</label>
+                <label class="check-item"><input type="checkbox" value="infection"> Infections respiratoires</label>
+                <label class="check-item"><input type="checkbox" value="autre"> Autre</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Avez-vous déjà été hospitalisé(e) pour une crise d'asthme ? <span class="req">*</span></label>
+              <div class="form-radio-group horizontal" id="fp-hospi">
+                <label class="radio-item"><input type="radio" name="fp_hospi" value="oui"> Oui</label>
+                <label class="radio-item"><input type="radio" name="fp_hospi" value="non"> Non</label>
+                <label class="radio-item"><input type="radio" name="fp_hospi" value="plusieurs"> Oui, plusieurs fois</label>
+              </div>
+              <div class="field-error" id="fp-hospi-err">Veuillez répondre à cette question.</div>
+            </div>
+            <div class="form-nav">
+              <button class="btn-prev" onclick="formPrev('patient',2)">← Retour</button>
+              <button class="btn-next" onclick="formNext('patient',2)">Suivant →</button>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 3 : Traitement & suivi -->
+          <div class="form-section" id="fp-s3">
+            <div class="form-section-title">💊 Traitement & suivi médical</div>
+            <div class="form-group">
+              <label class="form-label">Suivez-vous un traitement de fond ? <span class="req">*</span></label>
+              <div class="form-radio-group horizontal" id="fp-traitement">
+                <label class="radio-item"><input type="radio" name="fp_traitement" value="oui_regulier"> Oui, régulièrement</label>
+                <label class="radio-item"><input type="radio" name="fp_traitement" value="oui_irregular"> Oui, mais irrégulièrement</label>
+                <label class="radio-item"><input type="radio" name="fp_traitement" value="non"> Non</label>
+              </div>
+              <div class="field-error" id="fp-traitement-err">Veuillez répondre à cette question.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">À quelle fréquence consultez-vous un médecin pour votre asthme ?</label>
+              <select class="form-select" id="fp-consult">
+                <option value="">— Choisir —</option>
+                <option>Tous les mois</option>
+                <option>Tous les 3 à 6 mois</option>
+                <option>Une fois par an</option>
+                <option>Seulement lors des crises</option>
+                <option>Jamais</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Quel est votre principal obstacle au suivi médical ?</label>
+              <div class="form-radio-group" id="fp-obstacle">
+                <label class="radio-item"><input type="radio" name="fp_obs" value="cout"> Coût des soins</label>
+                <label class="radio-item"><input type="radio" name="fp_obs" value="distance"> Distance / accès au médecin</label>
+                <label class="radio-item"><input type="radio" name="fp_obs" value="temps"> Manque de temps</label>
+                <label class="radio-item"><input type="radio" name="fp_obs" value="aucun"> Aucun obstacle particulier</label>
+                <label class="radio-item"><input type="radio" name="fp_obs" value="autre"> Autre</label>
+              </div>
+            </div>
+            <div class="form-nav">
+              <button class="btn-prev" onclick="formPrev('patient',3)">← Retour</button>
+              <button class="btn-next" onclick="formNext('patient',3)">Suivant →</button>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 4 : Technologie & ASMA MONITOR -->
+          <div class="form-section" id="fp-s4">
+            <div class="form-section-title">⌚ Technologie & ASMA MONITOR</div>
+            <div class="form-group">
+              <label class="form-label">À quel point seriez-vous intéressé(e) par un bracelet qui prédit vos crises ? <span class="req">*</span></label>
+              <div class="scale-group" id="fp-interet">
+                <button class="scale-btn" onclick="selectScale(this,'fp-interet')">1</button>
+                <button class="scale-btn" onclick="selectScale(this,'fp-interet')">2</button>
+                <button class="scale-btn" onclick="selectScale(this,'fp-interet')">3</button>
+                <button class="scale-btn" onclick="selectScale(this,'fp-interet')">4</button>
+                <button class="scale-btn" onclick="selectScale(this,'fp-interet')">5</button>
+              </div>
+              <div class="scale-labels"><span>Pas du tout</span><span>Extrêmement</span></div>
+              <div class="field-error" id="fp-interet-err">Veuillez noter votre intérêt.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Quelles fonctionnalités vous semblent les plus importantes ? (2 max)</label>
+              <div class="form-check-group" id="fp-fonc">
+                <label class="check-item"><input type="checkbox" value="prediction"> 🔮 Prédiction de crise avant qu'elle arrive</label>
+                <label class="check-item"><input type="checkbox" value="alertes"> 🚨 Alertes d'urgence automatiques aux proches</label>
+                <label class="check-item"><input type="checkbox" value="rappels"> ⏰ Rappels médicaments intelligents</label>
+                <label class="check-item"><input type="checkbox" value="suivi"> 📊 Suivi des paramètres en temps réel</label>
+                <label class="check-item"><input type="checkbox" value="chat"> 💬 Chat avec mon médecin</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Prix acceptable pour un tel bracelet (achat unique) ?</label>
+              <div class="form-radio-group horizontal">
+                <label class="radio-item"><input type="radio" name="fp_prix" value="<10k"> &lt; 10 000 FCFA</label>
+                <label class="radio-item"><input type="radio" name="fp_prix" value="10-30k"> 10 000 – 30 000</label>
+                <label class="radio-item"><input type="radio" name="fp_prix" value="30-60k"> 30 000 – 60 000</label>
+                <label class="radio-item"><input type="radio" name="fp_prix" value=">60k"> + de 60 000</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Un message ou suggestion pour l'équipe ASMA MONITOR ?</label>
+              <textarea class="form-textarea" id="fp-message" placeholder="Partagez vos idées, vos attentes ou vos inquiétudes…"></textarea>
+            </div>
+            <div class="form-nav">
+              <button class="btn-prev" onclick="formPrev('patient',4)">← Retour</button>
+              <button class="btn-submit" onclick="formSubmit('patient')">🫁 Envoyer mes réponses ✓</button>
+            </div>
+          </div>
+
+          <!-- SUCCESS -->
+          <div class="form-success" id="fp-success">
+            <div class="success-icon">💓</div>
+            <div class="success-title">Merci pour votre témoignage !</div>
+            <div class="success-sub">Vos réponses sont précieuses. En tant que patient, vous contribuez directement à la conception d'ASMA MONITOR. Nous vous tiendrons informé(e) de l'avancement du projet.</div>
+            <button class="success-share" onclick="openShare()">📢 Partager à mes proches</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── DÉTAIL PARENT ── -->
+    <div class="profile-detail" id="detail-parent">
+      <div class="detail-card detail-parent">
+        <div class="detail-top">
+          <div class="pc-icon" style="background:rgba(249,115,22,.1);font-size:20px;width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;">👨‍👧</div>
+          <div>
+            <div class="detail-badge">Parcours Parent / Aidant</div>
+            <div class="detail-title" style="margin-top:4px">Tu veilles sur lui/elle chaque jour</div>
+          </div>
+        </div>
+        <div class="detail-msg">"En tant que parent ou aidant, tu vis l'asthme différemment — avec l'angoisse permanente et le souci de ne pas être là au bon moment."</div>
+        <div class="detail-points">
+          <div class="dp"><div class="dp-icon">📡</div><div class="dp-text"><strong>Surveillance à distance</strong> — Suis les paramètres de ton proche en temps réel depuis l'app</div></div>
+          <div class="dp"><div class="dp-icon">🚨</div><div class="dp-text"><strong>Alerte automatique</strong> — Reçois une notification immédiate + localisation GPS en cas de crise</div></div>
+          <div class="dp"><div class="dp-icon">👨‍⚕️</div><div class="dp-text"><strong>Chat médecin</strong> — Contacte le médecin directement depuis l'application</div></div>
+          <div class="dp"><div class="dp-icon">😌</div><div class="dp-text"><strong>Tranquillité d'esprit</strong> — Sois rassuré(e) même quand ton proche est seul ou à l'école</div></div>
+          <div class="dp"><div class="dp-icon">📊</div><div class="dp-text">Le questionnaire porte sur le <strong>suivi de ton proche, tes inquiétudes</strong> et les fonctionnalités qui t'aideraient</div></div>
+        </div>
+        <!-- ══ FORMULAIRE PARENT ══ -->
+        <div class="form-wrapper">
+          <div class="form-title">📋 Questionnaire — Parcours Parent / Aidant</div>
+
+          <div class="form-step-indicator">
+            <div class="fsi-dot active" id="fsi-parent-1"></div>
+            <div class="fsi-dot" id="fsi-parent-2"></div>
+            <div class="fsi-dot" id="fsi-parent-3"></div>
+            <span style="font-size:11px;color:var(--ink3);font-family:var(--fontm);margin-left:6px" id="par-progress">Étape 1 / 3</span>
+          </div>
+
+          <!-- ÉTAPE 1 : Votre situation -->
+          <div class="form-section active" id="par-s1">
+            <div class="form-section-title">👨‍👧 Votre situation</div>
+            <div class="form-group">
+              <label class="form-label">Quel est votre lien avec la personne asthmatique ? <span class="req">*</span></label>
+              <div class="form-radio-group" id="par-lien">
+                <label class="radio-item"><input type="radio" name="par_lien" value="parent-enfant"> Parent d'un enfant asthmatique</label>
+                <label class="radio-item"><input type="radio" name="par_lien" value="conjoint"> Conjoint(e) d'un asthmatique</label>
+                <label class="radio-item"><input type="radio" name="par_lien" value="famille"> Autre membre de la famille</label>
+                <label class="radio-item"><input type="radio" name="par_lien" value="aidant"> Aidant professionnel</label>
+              </div>
+              <div class="field-error" id="par-lien-err">Veuillez sélectionner votre lien.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Quel est l'âge de la personne que vous aidez ?</label>
+              <div class="form-radio-group horizontal">
+                <label class="radio-item"><input type="radio" name="par_age_proche" value="<12"> Moins de 12 ans</label>
+                <label class="radio-item"><input type="radio" name="par_age_proche" value="12-18"> 12 – 18 ans</label>
+                <label class="radio-item"><input type="radio" name="par_age_proche" value="18-60"> 18 – 60 ans</label>
+                <label class="radio-item"><input type="radio" name="par_age_proche" value=">60"> Plus de 60 ans</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">À quelle fréquence votre proche fait-il/elle des crises ? <span class="req">*</span></label>
+              <div class="form-radio-group" id="par-freq">
+                <label class="radio-item"><input type="radio" name="par_freq" value="quotidienne"> Très souvent (quasi quotidiennement)</label>
+                <label class="radio-item"><input type="radio" name="par_freq" value="hebdomadaire"> Plusieurs fois par semaine</label>
+                <label class="radio-item"><input type="radio" name="par_freq" value="mensuelle"> Quelques fois par mois</label>
+                <label class="radio-item"><input type="radio" name="par_freq" value="rare"> Rarement</label>
+              </div>
+              <div class="field-error" id="par-freq-err">Veuillez sélectionner une fréquence.</div>
+            </div>
+            <div class="form-nav">
+              <button class="btn-next" onclick="formNext('parent',1)">Suivant →</button>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 2 : Inquiétudes & quotidien -->
+          <div class="form-section" id="par-s2">
+            <div class="form-section-title">😟 Inquiétudes & quotidien</div>
+            <div class="form-group">
+              <label class="form-label">Quel est votre niveau d'inquiétude au quotidien pour votre proche ? <span class="req">*</span></label>
+              <div class="scale-group" id="par-inquietude">
+                <button class="scale-btn" onclick="selectScale(this,'par-inquietude')">1</button>
+                <button class="scale-btn" onclick="selectScale(this,'par-inquietude')">2</button>
+                <button class="scale-btn" onclick="selectScale(this,'par-inquietude')">3</button>
+                <button class="scale-btn" onclick="selectScale(this,'par-inquietude')">4</button>
+                <button class="scale-btn" onclick="selectScale(this,'par-inquietude')">5</button>
+              </div>
+              <div class="scale-labels"><span>Serein(e)</span><span>Très inquiet(e)</span></div>
+              <div class="field-error" id="par-inquietude-err">Veuillez évaluer votre niveau d'inquiétude.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Quelles sont vos principales difficultés ? (plusieurs choix)</label>
+              <div class="form-check-group">
+                <label class="check-item"><input type="checkbox" value="absent"> Ne pas être présent(e) lors d'une crise</label>
+                <label class="check-item"><input type="checkbox" value="nuit"> Les crises nocturnes</label>
+                <label class="check-item"><input type="checkbox" value="ecole"> La surveillance à l'école / au travail</label>
+                <label class="check-item"><input type="checkbox" value="medicaments"> L'oubli des médicaments</label>
+                <label class="check-item"><input type="checkbox" value="information"> Manque d'information sur l'asthme</label>
+                <label class="check-item"><input type="checkbox" value="communication"> Communication difficile avec les médecins</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Avez-vous déjà appelé les urgences pour votre proche ?</label>
+              <div class="form-radio-group horizontal">
+                <label class="radio-item"><input type="radio" name="par_urgences" value="oui"> Oui</label>
+                <label class="radio-item"><input type="radio" name="par_urgences" value="non"> Non</label>
+                <label class="radio-item"><input type="radio" name="par_urgences" value="plusieurs"> Plusieurs fois</label>
+              </div>
+            </div>
+            <div class="form-nav">
+              <button class="btn-prev" onclick="formPrev('parent',2)">← Retour</button>
+              <button class="btn-next" onclick="formNext('parent',2)">Suivant →</button>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 3 : ASMA MONITOR -->
+          <div class="form-section" id="par-s3">
+            <div class="form-section-title">⌚ ASMA MONITOR</div>
+            <div class="form-group">
+              <label class="form-label">Quelle fonctionnalité changerait le plus votre quotidien ? <span class="req">*</span></label>
+              <div class="form-radio-group" id="par-fonc">
+                <label class="radio-item"><input type="radio" name="par_fonc" value="alerte_gps"> 📍 Alerte automatique avec localisation GPS</label>
+                <label class="radio-item"><input type="radio" name="par_fonc" value="suivi_distance"> 📡 Suivi des paramètres de santé à distance</label>
+                <label class="radio-item"><input type="radio" name="par_fonc" value="prediction"> 🔮 Prédiction de crise avant qu'elle arrive</label>
+                <label class="radio-item"><input type="radio" name="par_fonc" value="chat_medecin"> 💬 Chat direct avec le médecin</label>
+                <label class="radio-item"><input type="radio" name="par_fonc" value="rappels"> ⏰ Rappels de médicaments pour mon proche</label>
+              </div>
+              <div class="field-error" id="par-fonc-err">Veuillez choisir une fonctionnalité prioritaire.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Seriez-vous prêt(e) à acheter ce bracelet pour votre proche ? <span class="req">*</span></label>
+              <div class="form-radio-group horizontal" id="par-achat">
+                <label class="radio-item"><input type="radio" name="par_achat" value="oui_sur"> Oui, certainement</label>
+                <label class="radio-item"><input type="radio" name="par_achat" value="oui_peut"> Peut-être</label>
+                <label class="radio-item"><input type="radio" name="par_achat" value="non"> Non</label>
+              </div>
+              <div class="field-error" id="par-achat-err">Veuillez répondre à cette question.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Un message à l'équipe ASMA MONITOR ?</label>
+              <textarea class="form-textarea" id="par-message" placeholder="Votre vécu, vos attentes, vos peurs…"></textarea>
+            </div>
+            <div class="form-nav">
+              <button class="btn-prev" onclick="formPrev('parent',3)">← Retour</button>
+              <button class="btn-submit" onclick="formSubmit('parent')">👨‍👧 Envoyer mes réponses ✓</button>
+            </div>
+          </div>
+
+          <!-- SUCCESS -->
+          <div class="form-success" id="par-success">
+            <div class="success-icon">🧡</div>
+            <div class="success-title">Merci infiniment !</div>
+            <div class="success-sub">Votre quotidien d'aidant est au cœur de notre conception. ASMA MONITOR sera conçu pour vous apporter la sérénité que vous méritez.</div>
+            <button class="success-share" onclick="openShare()">📢 Partager à mes proches</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── DÉTAIL PRO ── -->
+    <div class="profile-detail" id="detail-pro">
+      <div class="detail-card detail-pro">
+        <div class="detail-top">
+          <div class="pc-icon" style="background:rgba(13,148,136,.1);font-size:20px;width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;">👨‍⚕️</div>
+          <div>
+            <div class="detail-badge">Parcours Professionnel de santé</div>
+            <div class="detail-title" style="margin-top:4px">Votre expertise est au cœur du projet</div>
+          </div>
+        </div>
+        <div class="detail-msg">"Ce dispositif est conçu pour vous aussi : améliorer le suivi entre les consultations, recevoir des données fiables en temps réel et intervenir plus tôt."</div>
+        <div class="detail-points">
+          <div class="dp"><div class="dp-icon">📊</div><div class="dp-text"><strong>Tableau de bord médecin</strong> — Supervisez vos patients asthmatiques à distance en temps réel</div></div>
+          <div class="dp"><div class="dp-icon">⚡</div><div class="dp-text"><strong>Alertes automatiques</strong> — Soyez notifié immédiatement en cas de paramètres critiques</div></div>
+          <div class="dp"><div class="dp-icon">💬</div><div class="dp-text"><strong>Chat sécurisé</strong> — Communiquez avec vos patients entre les consultations</div></div>
+          <div class="dp"><div class="dp-icon">🤖</div><div class="dp-text"><strong>IA prédictive</strong> — L'algorithme analyse les données et prédit les crises avant vous alerter</div></div>
+          <div class="dp"><div class="dp-icon">📋</div><div class="dp-text">Le questionnaire porte sur votre <strong>pratique clinique, difficultés du suivi</strong> et votre intérêt pour le télésuivi</div></div>
+        </div>
+        <!-- ══ FORMULAIRE PROFESSIONNEL ══ -->
+        <div class="form-wrapper">
+          <div class="form-title">📋 Questionnaire — Parcours Professionnel de santé</div>
+
+          <div class="form-step-indicator">
+            <div class="fsi-dot active" id="fsi-pro-1"></div>
+            <div class="fsi-dot" id="fsi-pro-2"></div>
+            <div class="fsi-dot" id="fsi-pro-3"></div>
+            <span style="font-size:11px;color:var(--ink3);font-family:var(--fontm);margin-left:6px" id="pro-progress">Étape 1 / 3</span>
+          </div>
+
+          <!-- ÉTAPE 1 : Profil professionnel -->
+          <div class="form-section active" id="pro-s1">
+            <div class="form-section-title">🏥 Votre profil professionnel</div>
+            <div class="form-group">
+              <label class="form-label">Votre spécialité / fonction <span class="req">*</span></label>
+              <div class="form-radio-group" id="pro-spec">
+                <label class="radio-item"><input type="radio" name="pro_spec" value="medecin_general"> Médecin généraliste</label>
+                <label class="radio-item"><input type="radio" name="pro_spec" value="pneumologue"> Pneumologue / Allergologue</label>
+                <label class="radio-item"><input type="radio" name="pro_spec" value="pediatre"> Pédiatre</label>
+                <label class="radio-item"><input type="radio" name="pro_spec" value="infirmier"> Infirmier(e)</label>
+                <label class="radio-item"><input type="radio" name="pro_spec" value="pharmacien"> Pharmacien(ne)</label>
+                <label class="radio-item"><input type="radio" name="pro_spec" value="autre_pro"> Autre professionnel de santé</label>
+              </div>
+              <div class="field-error" id="pro-spec-err">Veuillez sélectionner votre spécialité.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Années d'expérience <span class="req">*</span></label>
+              <div class="form-radio-group horizontal" id="pro-exp">
+                <label class="radio-item"><input type="radio" name="pro_exp" value="<5"> Moins de 5 ans</label>
+                <label class="radio-item"><input type="radio" name="pro_exp" value="5-15"> 5 – 15 ans</label>
+                <label class="radio-item"><input type="radio" name="pro_exp" value=">15"> Plus de 15 ans</label>
+              </div>
+              <div class="field-error" id="pro-exp-err">Veuillez indiquer votre expérience.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Combien de patients asthmatiques suivez-vous par mois (estimation) ?</label>
+              <select class="form-select" id="pro-nb-patients">
+                <option value="">— Choisir —</option>
+                <option>Moins de 5</option>
+                <option>5 – 20</option>
+                <option>20 – 50</option>
+                <option>Plus de 50</option>
+              </select>
+            </div>
+            <div class="form-nav">
+              <button class="btn-next" onclick="formNext('pro',1)">Suivant →</button>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 2 : Pratique & difficultés -->
+          <div class="form-section" id="pro-s2">
+            <div class="form-section-title">📊 Pratique clinique & difficultés</div>
+            <div class="form-group">
+              <label class="form-label">Quelles sont vos principales difficultés dans le suivi de l'asthme ? (plusieurs choix)</label>
+              <div class="form-check-group">
+                <label class="check-item"><input type="checkbox" value="observance"> Mauvaise observance du traitement</label>
+                <label class="check-item"><input type="checkbox" value="donnees"> Manque de données entre les consultations</label>
+                <label class="check-item"><input type="checkbox" value="urgences"> Hospitalisations évitables / urgences répétées</label>
+                <label class="check-item"><input type="checkbox" value="communication"> Communication difficile avec les patients</label>
+                <label class="check-item"><input type="checkbox" value="ressources"> Manque de ressources de télésuivi</label>
+                <label class="check-item"><input type="checkbox" value="formation"> Formation insuffisante aux outils connectés</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Utilisez-vous déjà des outils numériques dans votre pratique ? <span class="req">*</span></label>
+              <div class="form-radio-group" id="pro-numerique">
+                <label class="radio-item"><input type="radio" name="pro_num" value="oui_regulier"> Oui, régulièrement (dossiers électroniques, apps…)</label>
+                <label class="radio-item"><input type="radio" name="pro_num" value="oui_ponctuel"> Ponctuellement</label>
+                <label class="radio-item"><input type="radio" name="pro_num" value="non_pas"> Non, pas encore</label>
+                <label class="radio-item"><input type="radio" name="pro_num" value="non_interesse"> Non, et pas particulièrement intéressé(e)</label>
+              </div>
+              <div class="field-error" id="pro-numerique-err">Veuillez répondre à cette question.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Quel est votre avis sur l'intégration de l'IA dans le suivi de l'asthme ?</label>
+              <div class="form-radio-group">
+                <label class="radio-item"><input type="radio" name="pro_ia" value="tres_favorable"> Très favorable — cela peut améliorer les soins</label>
+                <label class="radio-item"><input type="radio" name="pro_ia" value="favorable"> Favorable, avec certaines réserves</label>
+                <label class="radio-item"><input type="radio" name="pro_ia" value="neutre"> Neutre / Je manque d'information</label>
+                <label class="radio-item"><input type="radio" name="pro_ia" value="reticent"> Réticent(e) — je préfère le suivi traditionnel</label>
+              </div>
+            </div>
+            <div class="form-nav">
+              <button class="btn-prev" onclick="formPrev('pro',2)">← Retour</button>
+              <button class="btn-next" onclick="formNext('pro',2)">Suivant →</button>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 3 : ASMA MONITOR & recommandations -->
+          <div class="form-section" id="pro-s3">
+            <div class="form-section-title">🤖 ASMA MONITOR & recommandations</div>
+            <div class="form-group">
+              <label class="form-label">Quelle fonctionnalité du tableau de bord médecin vous serait la plus utile ? <span class="req">*</span></label>
+              <div class="form-radio-group" id="pro-dashboard">
+                <label class="radio-item"><input type="radio" name="pro_dash" value="alertes_critiques"> ⚡ Alertes automatiques sur paramètres critiques</label>
+                <label class="radio-item"><input type="radio" name="pro_dash" value="courbes_evolution"> 📈 Courbes d'évolution des paramètres (SpO₂, FR…)</label>
+                <label class="radio-item"><input type="radio" name="pro_dash" value="chat_patient"> 💬 Messagerie sécurisée avec les patients</label>
+                <label class="radio-item"><input type="radio" name="pro_dash" value="rapport_auto"> 📋 Rapports automatiques pré-consultation</label>
+                <label class="radio-item"><input type="radio" name="pro_dash" value="prediction_ia"> 🤖 Score de risque prédit par l'IA</label>
+              </div>
+              <div class="field-error" id="pro-dashboard-err">Veuillez choisir une fonctionnalité prioritaire.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">À quel point recommanderiez-vous ASMA MONITOR à vos confrères ? <span class="req">*</span></label>
+              <div class="scale-group" id="pro-nps">
+                <button class="scale-btn" onclick="selectScale(this,'pro-nps')">1</button>
+                <button class="scale-btn" onclick="selectScale(this,'pro-nps')">2</button>
+                <button class="scale-btn" onclick="selectScale(this,'pro-nps')">3</button>
+                <button class="scale-btn" onclick="selectScale(this,'pro-nps')">4</button>
+                <button class="scale-btn" onclick="selectScale(this,'pro-nps')">5</button>
+              </div>
+              <div class="scale-labels"><span>Pas du tout</span><span>Certainement</span></div>
+              <div class="field-error" id="pro-nps-err">Veuillez évaluer.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Vos recommandations cliniques pour l'équipe (contraintes techniques, données prioritaires…)</label>
+              <textarea class="form-textarea" id="pro-recommandations" placeholder="Vos recommandations d'expert sont précieuses pour la conception du dispositif…" style="min-height:100px"></textarea>
+            </div>
+            <div class="form-nav">
+              <button class="btn-prev" onclick="formPrev('pro',3)">← Retour</button>
+              <button class="btn-submit" onclick="formSubmit('pro')">👨‍⚕️ Envoyer mes réponses ✓</button>
+            </div>
+          </div>
+
+          <!-- SUCCESS -->
+          <div class="form-success" id="pro-success">
+            <div class="success-icon">🏥</div>
+            <div class="success-title">Merci pour votre expertise !</div>
+            <div class="success-sub">Votre avis de professionnel de santé est au cœur de la conception d'ASMA MONITOR. Nous espérons que ce dispositif facilitera votre pratique quotidienne.</div>
+            <button class="success-share" onclick="openShare()">📢 Partager à mes confrères</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── DÉTAIL CURIEUX ── -->
+    <div class="profile-detail" id="detail-curious">
+      <div class="detail-card detail-curious">
+        <div class="detail-top">
+          <div class="pc-icon" style="background:rgba(124,58,237,.1);font-size:20px;width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;">🔍</div>
+          <div>
+            <div class="detail-badge">Parcours Grand public</div>
+            <div class="detail-title" style="margin-top:4px">Même sans asthme, ton avis compte !</div>
+          </div>
+        </div>
+        <div class="detail-msg">"Tu n'es peut-être pas asthmatique, mais tu as forcément un proche, un collègue ou un voisin qui l'est. Ton regard extérieur est précieux pour nous."</div>
+        <div class="detail-points">
+          <div class="dp"><div class="dp-icon">🌍</div><div class="dp-text"><strong>Impact sociétal</strong> — L'asthme touche 300 millions de personnes dans le monde, dont des millions en Afrique</div></div>
+          <div class="dp"><div class="dp-icon">💡</div><div class="dp-text"><strong>Ton regard extérieur</strong> — Ta perception de la technologie médicale nous aide à concevoir une solution inclusive</div></div>
+          <div class="dp"><div class="dp-icon">🎓</div><div class="dp-text"><strong>Soutien académique</strong> — Tu aides des étudiants de l'SUPPTIC Cameroun à finaliser leur projet de fin d'études</div></div>
+          <div class="dp"><div class="dp-icon">📱</div><div class="dp-text">Le questionnaire est <strong>court et simple</strong> — pas de question médicale complexe pour ce parcours</div></div>
+        </div>
+        <!-- ══ FORMULAIRE CURIEUX ══ -->
+        <div class="form-wrapper">
+          <div class="form-title">📋 Questionnaire — Parcours Grand public</div>
+
+          <div class="form-step-indicator">
+            <div class="fsi-dot active" id="fsi-curious-1"></div>
+            <div class="fsi-dot" id="fsi-curious-2"></div>
+            <span style="font-size:11px;color:var(--ink3);font-family:var(--fontm);margin-left:6px" id="cur-progress">Étape 1 / 2</span>
+          </div>
+
+          <!-- ÉTAPE 1 : Contexte & perception -->
+          <div class="form-section active" id="cur-s1">
+            <div class="form-section-title">🌍 Contexte & perception</div>
+            <div class="form-group">
+              <label class="form-label">Connaissez-vous personnellement quelqu'un qui souffre d'asthme ? <span class="req">*</span></label>
+              <div class="form-radio-group horizontal" id="cur-connait">
+                <label class="radio-item"><input type="radio" name="cur_connait" value="oui_proche"> Oui, un proche</label>
+                <label class="radio-item"><input type="radio" name="cur_connait" value="oui_connaissance"> Oui, une connaissance</label>
+                <label class="radio-item"><input type="radio" name="cur_connait" value="non"> Non</label>
+              </div>
+              <div class="field-error" id="cur-connait-err">Veuillez répondre à cette question.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Comment avez-vous entendu parler d'ASMA MONITOR ? <span class="req">*</span></label>
+              <div class="form-radio-group" id="cur-source">
+                <label class="radio-item"><input type="radio" name="cur_source" value="ami"> Un ami / la famille</label>
+                <label class="radio-item"><input type="radio" name="cur_source" value="reseaux"> Réseaux sociaux</label>
+                <label class="radio-item"><input type="radio" name="cur_source" value="etudiant"> Milieu estudiantin / SUPPTIC</label>
+                <label class="radio-item"><input type="radio" name="cur_source" value="autre_source"> Autre</label>
+              </div>
+              <div class="field-error" id="cur-source-err">Veuillez renseigner cette source.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Selon vous, l'asthme est-il un problème de santé majeur en Afrique ?</label>
+              <div class="form-radio-group horizontal">
+                <label class="radio-item"><input type="radio" name="cur_afrique" value="oui_tres"> Oui, très important</label>
+                <label class="radio-item"><input type="radio" name="cur_afrique" value="oui"> Oui, important</label>
+                <label class="radio-item"><input type="radio" name="cur_afrique" value="peu"> Peu concernant</label>
+                <label class="radio-item"><input type="radio" name="cur_afrique" value="sais_pas"> Je ne sais pas</label>
+              </div>
+            </div>
+            <div class="form-nav">
+              <button class="btn-next" onclick="formNext('curious',1)">Suivant →</button>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 2 : Technologie & soutien -->
+          <div class="form-section" id="cur-s2">
+            <div class="form-section-title">💡 Technologie & soutien</div>
+            <div class="form-group">
+              <label class="form-label">L'idée d'un bracelet IA qui prédit les crises d'asthme vous paraît… <span class="req">*</span></label>
+              <div class="form-radio-group" id="cur-avis">
+                <label class="radio-item"><input type="radio" name="cur_avis" value="tres_innovant"> 🚀 Très innovante et nécessaire</label>
+                <label class="radio-item"><input type="radio" name="cur_avis" value="interessant"> 💡 Intéressante, mais à valider</label>
+                <label class="radio-item"><input type="radio" name="cur_avis" value="neutre"> 😐 Neutre, je n'ai pas d'avis tranché</label>
+                <label class="radio-item"><input type="radio" name="cur_avis" value="sceptique"> 🤔 Sceptique — des doutes sur la faisabilité</label>
+              </div>
+              <div class="field-error" id="cur-avis-err">Veuillez donner votre avis.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Seriez-vous prêt(e) à parler d'ASMA MONITOR autour de vous ? <span class="req">*</span></label>
+              <div class="form-radio-group horizontal" id="cur-partage">
+                <label class="radio-item"><input type="radio" name="cur_partage" value="oui_certain"> Oui, certainement</label>
+                <label class="radio-item"><input type="radio" name="cur_partage" value="peut_etre"> Peut-être</label>
+                <label class="radio-item"><input type="radio" name="cur_partage" value="non_partage"> Non</label>
+              </div>
+              <div class="field-error" id="cur-partage-err">Veuillez répondre.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Quel aspect d'ASMA MONITOR vous semble le plus important pour la société ?</label>
+              <div class="form-radio-group">
+                <label class="radio-item"><input type="radio" name="cur_impact" value="sauver_vies"> 💓 Sauver des vies en prévenant les crises</label>
+                <label class="radio-item"><input type="radio" name="cur_impact" value="access_soins"> 🏥 Améliorer l'accès aux soins en Afrique</label>
+                <label class="radio-item"><input type="radio" name="cur_impact" value="autonomie"> 💪 Rendre les patients plus autonomes</label>
+                <label class="radio-item"><input type="radio" name="cur_impact" value="innovation"> 🚀 Porter l'innovation tech africaine</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Un message ou une question pour l'équipe ?</label>
+              <textarea class="form-textarea" id="cur-message" placeholder="Votre message, curiosité ou encouragement…"></textarea>
+            </div>
+            <div class="form-nav">
+              <button class="btn-prev" onclick="formPrev('curious',2)">← Retour</button>
+              <button class="btn-submit" onclick="formSubmit('curious')">🔍 Envoyer mes réponses ✓</button>
+            </div>
+          </div>
+
+          <!-- SUCCESS -->
+          <div class="form-success" id="cur-success">
+            <div class="success-icon">🙏</div>
+            <div class="success-title">Merci pour votre soutien !</div>
+            <div class="success-sub">Même sans être directement concerné(e), votre regard est précieux. En partageant ce questionnaire, vous aidez des étudiants de l'SUPPTIC à finaliser un projet qui pourrait changer des vies.</div>
+            <button class="success-share" onclick="openShare()">📢 Partager à mes proches</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hero-inner -->
+</div><!-- /hero -->
+
+<!-- ════════ STATS ════════ -->
+<div class="stats-section">
+  <div class="stats-inner">
+    <div class="stats-title">Déjà <em id="stats-count">247</em> personnes ont participé 🙏</div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-num" id="s1">63%</span>
+        <span class="stat-lbl">Patients asthmatiques<br>ou familles concernées</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" id="s2">18%</span>
+        <span class="stat-lbl">Professionnels<br>de santé</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">4,7/5</span>
+        <span class="stat-lbl">Satisfaction<br>du questionnaire</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ COMMENT ÇA MARCHE ════════ -->
+<div class="how-section">
+  <div class="how-inner">
+    <div class="section-eyebrow">Comment ça marche</div>
+    <div class="section-h">ASMA MONITOR en 3 étapes simples</div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-icon">⌚</div>
+        <div class="step-title">Tu portes le bracelet</div>
+        <div class="step-desc">Le bracelet mesure en continu ta SpO₂, fréquence cardiaque, respiratoire et la qualité de l'air autour de toi.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-icon">🤖</div>
+        <div class="step-title">L'IA analyse en temps réel</div>
+        <div class="step-desc">Notre algorithme détecte les signes précurseurs d'une crise plusieurs minutes à l'avance et t'alerte immédiatement.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-icon">📱</div>
+        <div class="step-title">L'app gère tout</div>
+        <div class="step-desc">Rappels médicaments, chat médecin, alerte GPS automatique aux proches, communauté de patients — tout dans une seule app gratuite.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ TÉMOIGNAGES ════════ -->
+<div class="quotes-section">
+  <div class="quotes-inner">
+    <div class="section-eyebrow">Témoignages</div>
+    <div class="section-h">Ce qu'ils en disent</div>
+    <div class="quotes-grid">
+      <div class="quote-card">
+        <div class="quote-stars">★★★★★</div>
+        <div class="quote-text">"Je vis avec l'asthme depuis 12 ans. Un bracelet qui prédit les crises, c'est le rêve que j'ai toujours eu. J'ai répondu en 4 minutes !"</div>
+        <div class="quote-author">
+          <div class="qa-avatar" style="background:var(--red)">S</div>
+          <div><div class="qa-name">Sandrine K.</div><div class="qa-role">Patiente asthmatique · Yaoundé</div></div>
+        </div>
+      </div>
+      <div class="quote-card">
+        <div class="quote-stars">★★★★★</div>
+        <div class="quote-text">"En tant que pédiatre, je vois chaque semaine des enfants hospitalisés pour des crises qu'on aurait pu éviter. Ce projet est nécessaire."</div>
+        <div class="quote-author">
+          <div class="qa-avatar" style="background:var(--teal)">D</div>
+          <div><div class="qa-name">Dr. Njike Paul</div><div class="qa-role">Pédiatre · Hôpital Central Yaoundé</div></div>
+        </div>
+      </div>
+      <div class="quote-card">
+        <div class="quote-stars">★★★★★</div>
+        <div class="quote-text">"Ma fille de 8 ans est asthmatique. Chaque nuit j'ai peur. Un système d'alerte automatique changerait tout pour notre famille."</div>
+        <div class="quote-author">
+          <div class="qa-avatar" style="background:var(--coral)">M</div>
+          <div><div class="qa-name">Marie T.</div><div class="qa-role">Maman · Douala</div></div>
+        </div>
+      </div>
+      <div class="quote-card">
+        <div class="quote-stars">★★★★☆</div>
+        <div class="quote-text">"Je ne suis pas asthmatique mais j'ai rempli le questionnaire pour soutenir l'équipe. Très bien conçu, rapide et intéressant !"</div>
+        <div class="quote-author">
+          <div class="qa-avatar" style="background:var(--purple)">A</div>
+          <div><div class="qa-name">Alain B.</div><div class="qa-role">Étudiant · SUPPTIC Cameroun</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ CTA FINAL ════════ -->
+<div class="final-cta">
+  <div class="final-inner">
+    <div class="final-h">Tu peux faire la différence<br>en 5 minutes 🙏</div>
+    <div class="final-sub">Partage ce questionnaire à tes amis, ta famille, tes collègues.<br>Plus nous sommes nombreux, meilleur sera notre dispositif.</div>
+    <div class="final-btns">
+      <button class="final-btn-main" onclick="document.querySelector('.profile-chooser').scrollIntoView({behavior:'smooth'})">
+        💓 Participer maintenant
+      </button>
+      <button class="final-btn-share" onclick="openShare()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="white" stroke-width="2"/><circle cx="6" cy="12" r="3" stroke="white" stroke-width="2"/><circle cx="18" cy="19" r="3" stroke="white" stroke-width="2"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        Partager l'enquête
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ FOOTER ════════ -->
+<footer>
+  <div class="footer-logo">⌚ ASMA MONITOR</div>
+  <div class="footer-sub">Projet de Fin d'Études · SUPPTIC Cameroun · 2025<br>Groupe 16 · Suivi intelligent de l'asthme par bracelet connecté</div>
+</footer>
+
+<!-- ════════ MODAL PARTAGE ════════ -->
+<div class="share-modal" id="share-modal" onclick="closeShare(event)">
+  <div class="share-sheet">
+    <div class="ss-handle"></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+      <div class="ss-title">📢 Partager l'enquête</div>
+      <button class="ss-close" onclick="closeShare()">×</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="ss-tabs">
+      <div class="ss-tab active" onclick="switchMsg('wa')">💬 WhatsApp</div>
+      <div class="ss-tab" onclick="switchMsg('sms')">📱 SMS</div>
+      <div class="ss-tab" onclick="switchMsg('fb')">📘 Facebook</div>
+      <div class="ss-tab" onclick="switchMsg('twitter')">🐦 Twitter</div>
+      <div class="ss-tab" onclick="switchMsg('email')">📧 Email</div>
+    </div>
+
+    <!-- Message affiché -->
+    <div class="ss-message" id="ss-msg-display"></div>
+
+    <div class="ss-actions">
+      <button class="ss-copy" id="ss-copy-btn" onclick="copyMsg()">📋 Copier le message</button>
+      <button class="ss-wa" id="ss-send-btn" onclick="sendVia()">Envoyer →</button>
+    </div>
+    <div style="font-size:11px;color:var(--ink3);margin-top:10px;text-align:center">
+      Lien inclus dans le message : <a href="#" style="color:var(--red);text-decoration:underline" id="link-display">questionnaire ASMA MONITOR</a>
+    </div>
+  </div>
+</div>
+
+<script>
+'use strict';
+
+const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfDCIzenTIIsaCOYCVCiBiSYj_OQ6Lm14KoVujNuFBNEpisKA/viewform';
+const PAGE_URL = window.location.href;
+
+// ── Compteur animé ──
+function animateCount(el, target, duration = 1500) {
+  const start = 0, step = target / (duration / 16);
+  let current = start;
+  const timer = setInterval(() => {
+    current = Math.min(current + step, target);
+    el.textContent = Math.round(current);
+    if (current >= target) clearInterval(timer);
+  }, 16);
+}
+window.addEventListener('load', () => {
+  const el = document.getElementById('counter-num');
+  const el2 = document.getElementById('stats-count');
+  const target = 247 + Math.floor(Math.random() * 30);
+  animateCount(el, target);
+  setTimeout(() => animateCount(el2, target), 500);
+});
+
+// ── Sélection de profil ──
+let currentProfile = null;
+function selectProfile(profile) {
+  // Désélectionner tout
+  document.querySelectorAll('.profile-card').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.profile-detail').forEach(d => {
+    d.classList.remove('show');
+    d.style.display = 'none'; // reset
+  });
+
+  // Activer la carte
+  const card = document.querySelector('.p-' + profile);
+  if (card) card.classList.add('active');
+
+  // Afficher le détail
+  const detail = document.getElementById('detail-' + profile);
+  if (detail) {
+    detail.style.display = 'block'; // besoin pour l'animation
+    requestAnimationFrame(() => detail.classList.add('show'));
+  }
+
+  currentProfile = profile;
+
+  // Scroll vers le détail
+  setTimeout(() => {
+    if (detail) detail.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 100);
+}
+
+// ── Messages de partage par canal ──
+const MESSAGES = {
+  wa: {
+    label: '💬 WhatsApp',
+    sendLabel: '📲 Ouvrir WhatsApp',
+    text: (url) =>
+`💓 Ton avis peut sauver une vie !
+
+Je participe à une enquête sur un bracelet connecté capable de *prédire les crises d'asthme* ⌚🫁
+
+⏱️ 5 minutes seulement
+🔒 100% anonyme
+🧠 Questions adaptées à ton profil
+
+👉 ${url}
+
+🎓 Projet PFE · SUPPTIC Cameroun 2025 — *ASMA MONITOR*
+Partage à tes proches, ça aide vraiment 🙏`,
+    send: (text) => `https://wa.me/?text=${encodeURIComponent(text)}`
+  },
+  sms: {
+    label: '📱 SMS',
+    sendLabel: '📱 Ouvrir SMS',
+    text: (url) =>
+`💓 Participe à notre enquête ASMA MONITOR !
+Bracelet connecté anti-asthme ⌚
+⏱ 5 min · 🔒 Anonyme
+👉 ${url}`,
+    send: (text) => `sms:?body=${encodeURIComponent(text)}`
+  },
+  fb: {
+    label: '📘 Facebook',
+    sendLabel: '📘 Partager sur Facebook',
+    text: (url) =>
+`🚨 APPEL À PARTICIPATION — Étude médicale innovante 🎓
+
+Nous développons ASMA MONITOR : un bracelet connecté intelligent qui PRÉDIT et PRÉVIENT les crises d'asthme grâce à l'intelligence artificielle ⌚🫁🤖
+
+Nous avons besoin de VOTRE avis !
+✅ Patient asthmatique
+✅ Parent d'un enfant asthmatique
+✅ Professionnel de santé
+✅ Simple citoyen curieux
+
+⏱️ 5 minutes · 100% anonyme · Questions adaptées à votre profil
+
+👉 ${url}
+
+Merci de PARTAGER à vos proches 🙏
+#AsmaMonitor #SUPPTIC #Cameroun #SantéConnectée #Asthme`,
+    send: (url) => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`
+  },
+  twitter: {
+    label: '🐦 Twitter / X',
+    sendLabel: '🐦 Tweeter',
+    text: (url) =>
+`💓 Ton avis peut sauver une vie !
+
+Participe à notre enquête sur un bracelet connecté qui prédit les crises d'asthme 🫁⌚
+
+⏱️ 5 min · 🔒 Anonyme
+👉 ${url}
+
+#AsmaMonitor #Asthme #SantéConnectée #SUPPTIC #Cameroun`,
+    send: (text) => `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`
+  },
+  email: {
+    label: '📧 Email',
+    sendLabel: '📧 Ouvrir la messagerie',
+    subject: 'ASMA MONITOR — Participe à notre enquête sur l\'asthme',
+    text: (url) =>
+`Bonjour,
+
+Je t'écris pour te parler d'un projet qui me tient à cœur.
+
+Des étudiants de l'SUPPTIC Cameroun développent ASMA MONITOR, un bracelet connecté intelligent capable de prédire et prévenir les crises d'asthme grâce à l'intelligence artificielle.
+
+Ils ont besoin de ton avis — que tu sois patient, parent, professionnel de santé ou simplement curieux.
+
+✅ 5 minutes seulement
+✅ 100% anonyme
+✅ Questions adaptées à ton profil
+
+👉 Lien du questionnaire : ${url}
+
+Merci de le partager à ton entourage, chaque réponse compte !
+
+Cordialement`,
+    send: (text, subject) => `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`
+  }
+};
+
+let currentChannel = 'wa';
+
+function switchMsg(channel) {
+  currentChannel = channel;
+  document.querySelectorAll('.ss-tab').forEach(t => t.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  renderMsg();
+}
+
+function renderMsg() {
+  const ch = MESSAGES[currentChannel];
+  const text = ch.text(PAGE_URL.includes('localhost') ? FORM_URL : PAGE_URL);
+  document.getElementById('ss-msg-display').textContent = text;
+  document.getElementById('ss-send-btn').textContent = ch.sendLabel;
+  document.getElementById('link-display').textContent = FORM_URL.slice(0, 50) + '…';
+  document.getElementById('link-display').href = FORM_URL;
+}
+
+function openShare() {
+  renderMsg();
+  document.getElementById('share-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeShare(e) {
+  if (!e || e.target === document.getElementById('share-modal')) {
+    document.getElementById('share-modal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
+
+function copyMsg() {
+  const text = document.getElementById('ss-msg-display').textContent;
+  navigator.clipboard?.writeText(text).then(() => {
+    const btn = document.getElementById('ss-copy-btn');
+    const prev = btn.textContent;
+    btn.textContent = '✅ Copié !';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = prev; btn.classList.remove('copied'); }, 2500);
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+  });
+}
+
+function sendVia() {
+  const ch = MESSAGES[currentChannel];
+  const text = document.getElementById('ss-msg-display').textContent;
+  let url;
+  if (currentChannel === 'fb')      url = ch.send(PAGE_URL);
+  else if (currentChannel === 'email') url = ch.send(text, ch.subject);
+  else                                  url = ch.send(text);
+  window.open(url, '_blank');
+}
+
+// Partage natif
+document.querySelector('.sb-share-btn').addEventListener('click', () => {
+  if (navigator.share) {
+    navigator.share({
+      title: 'ASMA MONITOR — Participe à notre enquête',
+      text: '💓 Ton avis peut sauver une vie ! Participe à notre enquête sur le bracelet connecté anti-asthme.',
+      url: PAGE_URL
+    }).catch(() => openShare());
+  } else {
+    openShare();
+  }
+});
+
+// Animation stagger des profils
+document.querySelectorAll('.profile-card').forEach((card, i) => {
+  card.style.opacity = '0';
+  card.style.transform = 'translateY(10px)';
+  card.style.transition = `all .3s ease ${.8 + i * .08}s`;
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    card.style.opacity = '1';
+    card.style.transform = 'none';
+  }));
+});
+
+/* ══════════════════════════════════
+   LOGIQUE DES FORMULAIRES
+══════════════════════════════════ */
+
+// Config : nombre d'étapes par profil
+const FORM_STEPS = { patient: 4, parent: 3, pro: 3, curious: 2 };
+
+// Préfixes d'ID par profil
+const FORM_PREFIX = { patient: 'fp', parent: 'par', pro: 'pro', curious: 'cur' };
+
+// Étape courante par profil
+const formState = { patient: 1, parent: 1, pro: 1, curious: 1 };
+
+function updateStepIndicator(profile, step) {
+  const total = FORM_STEPS[profile];
+  const prefix = FORM_PREFIX[profile];
+
+  // Dots
+  for (let i = 1; i <= total; i++) {
+    const dot = document.getElementById(`fsi-${profile}-${i}`);
+    if (!dot) continue;
+    dot.classList.remove('active','done');
+    if (i < step) dot.classList.add('done');
+    else if (i === step) dot.classList.add('active');
+  }
+
+  // Texte progression
+  const progressEl = document.getElementById(`${prefix}-progress`);
+  if (progressEl) progressEl.textContent = `Étape ${step} / ${total}`;
+}
+
+function formNext(profile, currentStep) {
+  const prefix = FORM_PREFIX[profile];
+
+  // Validation de l'étape courante
+  if (!validateStep(profile, currentStep)) return;
+
+  // Cacher étape courante
+  const current = document.getElementById(`${prefix}-s${currentStep}`);
+  if (current) current.classList.remove('active');
+
+  // Afficher suivante
+  const next = document.getElementById(`${prefix}-s${currentStep + 1}`);
+  if (next) next.classList.add('active');
+
+  formState[profile] = currentStep + 1;
+  updateStepIndicator(profile, currentStep + 1);
+
+  // Scroll vers le formulaire
+  setTimeout(() => {
+    const wrapper = current?.closest('.form-wrapper');
+    if (wrapper) wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 80);
+}
+
+function formPrev(profile, currentStep) {
+  const prefix = FORM_PREFIX[profile];
+
+  const current = document.getElementById(`${prefix}-s${currentStep}`);
+  if (current) current.classList.remove('active');
+
+  const prev = document.getElementById(`${prefix}-s${currentStep - 1}`);
+  if (prev) prev.classList.add('active');
+
+  formState[profile] = currentStep - 1;
+  updateStepIndicator(profile, currentStep - 1);
+}
+
+/* ── Collecte toutes les réponses du formulaire d'un profil ── */
+function collectFormData(profile) {
+  const prefix = FORM_PREFIX[profile];
+  const total = FORM_STEPS[profile];
+  const lines = [];
+  const now = new Date();
+  lines.push(`📅 Date : ${now.toLocaleDateString('fr-FR')} à ${now.toLocaleTimeString('fr-FR')}`);
+  lines.push(`👤 Profil : ${profile.toUpperCase()}`);
+  lines.push('━'.repeat(40));
+
+  // Collecter tous les radios cochés
+  const radioNames = {
+    patient: ['fp_age','fp_type','fp_freq','fp_hospi','fp_traitement','fp_obs','fp_prix'],
+    parent:  ['par_lien','par_age_proche','par_freq','par_urgences','par_fonc','par_achat'],
+    pro:     ['pro_spec','pro_exp','pro_num','pro_dash'],
+    curious: ['cur_connait','cur_source','cur_avis','cur_partage']
+  };
+  const labels = {
+    fp_age:'Tranche d\'âge', fp_type:'Type asthme', fp_freq:'Fréquence crises',
+    fp_hospi:'Hospitalisé', fp_traitement:'Traitement fond', fp_obs:'Obstacle suivi', fp_prix:'Prix acceptable',
+    par_lien:'Lien avec proche', par_age_proche:'Âge du proche', par_freq:'Fréquence crises proche',
+    par_urgences:'Appel urgences', par_fonc:'Fonctionnalité prioritaire', par_achat:'Intention achat',
+    pro_spec:'Spécialité', pro_exp:'Expérience', pro_num:'Usage numérique', pro_dash:'Intérêt dashboard',
+    cur_connait:'Connaissance asthme', cur_source:'Source info', cur_avis:'Avis bracelet connecté', cur_partage:'Partage enquête'
+  };
+
+  const names = radioNames[profile] || [];
+  names.forEach(name => {
+    const checked = document.querySelector(`input[name="${name}"]:checked`);
+    lines.push(`• ${labels[name] || name} : ${checked ? checked.value : 'Non renseigné'}`);
+  });
+
+  // Selects
+  const selectIds = {
+    patient: [{id:'fp-duree', label:'Durée diagnostic'}, {id:'fp-consult', label:'Fréquence consultation'}],
+    parent: [],
+    pro: [{id:'pro-nb-patients', label:'Nb patients/mois'}],
+    curious: []
+  };
+  (selectIds[profile] || []).forEach(({id, label}) => {
+    const el = document.getElementById(id);
+    lines.push(`• ${label} : ${el && el.value ? el.value : 'Non renseigné'}`);
+  });
+
+  // Scales
+  const scaleIds = {
+    patient: [{id:'fp-interet', label:'Intérêt bracelet (1-5)'}],
+    parent:  [{id:'par-inquietude', label:'Inquiétude quotidienne (1-5)'}],
+    pro:     [{id:'pro-nps', label:'Recommandation NPS (1-5)'}],
+    curious: []
+  };
+  (scaleIds[profile] || []).forEach(({id, label}) => {
+    const group = document.getElementById(id);
+    const selected = group && group.querySelector('.scale-btn.selected');
+    lines.push(`• ${label} : ${selected ? selected.textContent : 'Non renseigné'}`);
+  });
+
+  // Checkboxes
+  const checkIds = {
+    patient: [{id:'fp-triggers', label:'Déclencheurs'}, {id:'fp-fonc', label:'Fonctionnalités souhaitées'}],
+    parent:  [],
+    pro:     [],
+    curious: []
+  };
+  (checkIds[profile] || []).forEach(({id, label}) => {
+    const group = document.getElementById(id);
+    if (!group) return;
+    const vals = [...group.querySelectorAll('input:checked')].map(i => i.value).join(', ');
+    lines.push(`• ${label} : ${vals || 'Aucun'}`);
+  });
+
+  // Textareas / messages
+  const msgIds = {
+    patient: 'fp-message', parent: 'par-message', pro: 'pro-commentaire', curious: 'cur-commentaire'
+  };
+  const msgEl = document.getElementById(msgIds[profile]);
+  if (msgEl && msgEl.value.trim()) {
+    lines.push('');
+    lines.push(`💬 Message libre :\n${msgEl.value.trim()}`);
+  }
+
+  return lines.join('\n');
+}
+
+/* ── Toast de notification ── */
+function showToast(msg, type='success') {
+  let toast = document.getElementById('asma-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'asma-toast';
+    toast.style.cssText = `position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
+      padding:12px 24px;border-radius:12px;font-family:var(--font);font-size:14px;font-weight:700;
+      z-index:9999;transition:all .3s;box-shadow:0 8px 32px rgba(0,0,0,.2);max-width:90vw;text-align:center;`;
+    document.body.appendChild(toast);
+  }
+  toast.style.background = type === 'success' ? 'var(--green)' : (type === 'error' ? 'var(--red)' : 'var(--navy)');
+  toast.style.color = 'white';
+  toast.textContent = msg;
+  toast.style.opacity = '1';
+  toast.style.display = 'block';
+  setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => toast.style.display='none', 300); }, 4000);
+}
+
+/* ── Envoi via EmailJS ── */
+async function sendViaEmailJS(profile, formData) {
+  // Vérifier si EmailJS est configuré
+  if (EMAILJS_CONFIG.publicKey === '') {
+    console.warn('EmailJS non configuré — simulation d\'envoi');
+    showToast('⚠️ Mode test : configurez EmailJS pour envoyer les vrais emails', 'info');
+    return true; // Simuler succès en mode démo
+  }
+
+  try {
+    const templateParams = {
+      to_email:  'lykaessoung@gmail.com',
+      profil:    profile.toUpperCase(),
+      date:      new Date().toLocaleString('fr-FR'),
+      reponses:  formData,
+      subject:   `[ASMA MONITOR PFE] Réponse - Profil ${profile.toUpperCase()}`
+    };
+
+    const response = await emailjs.send(
+      EMAILJS_CONFIG.serviceId,
+      EMAILJS_CONFIG.templateId,
+      templateParams
+    );
+    console.log('✅ Email envoyé:', response.status, response.text);
+    return true;
+  } catch (error) {
+    console.error('❌ Erreur EmailJS:', error);
+    return false;
+  }
+}
+
+async function formSubmit(profile) {
+  const prefix = FORM_PREFIX[profile];
+  const total = FORM_STEPS[profile];
+
+  // Valider la dernière étape
+  if (!validateStep(profile, total)) return;
+
+  // Désactiver le bouton submit pendant l'envoi
+  const submitBtn = document.querySelector(`#${prefix}-s${total} .btn-submit`);
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.textContent = '⏳ Envoi en cours…';
+  }
+
+  // Collecter les données
+  const formData = collectFormData(profile);
+
+  // Envoyer via EmailJS
+  const sent = await sendViaEmailJS(profile, formData);
+
+  // Réactiver le bouton
+  if (submitBtn) {
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = sent ? '✅ Envoyé !' : '🔄 Réessayer';
+    setTimeout(() => {
+      if (submitBtn) submitBtn.innerHTML = '📤 Envoyer mes réponses ✓';
+    }, 3000);
+  }
+
+  if (sent) {
+    showToast('✅ Réponses envoyées à lykaessoung@gmail.com !', 'success');
+  } else {
+    showToast("❌ Erreur envoi. Vérifiez que le domaine elie3764.github.io est autorisé dans EmailJS.", "error");
+    return; // Ne pas afficher le succès si échec
+  }
+
+  // Cacher dernière étape
+  const last = document.getElementById(`${prefix}-s${total}`);
+  if (last) last.classList.remove('active');
+
+  // Afficher succès
+  const success = document.getElementById(`${prefix}-success`);
+  if (success) {
+    success.classList.add('show');
+    setTimeout(() => success.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+  }
+
+  // Incrémenter le compteur (effet visuel)
+  const counterEls = [
+    document.getElementById('counter-num'),
+    document.getElementById('stats-count')
+  ];
+  counterEls.forEach(el => {
+    if (el) {
+      const current = parseInt(el.textContent) || 0;
+      el.textContent = current + 1;
+      el.style.color = 'var(--green)';
+      setTimeout(() => el.style.color = '', 2000);
+    }
+  });
+}
+
+/* ── Validation par étape ── */
+function validateStep(profile, step) {
+  const prefix = FORM_PREFIX[profile];
+  let valid = true;
+
+  // Helper : montrer/cacher erreur
+  const setErr = (id, show) => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('show', show);
+  };
+
+  // Helper : vérifier radio group
+  const radioChecked = (name) => document.querySelector(`input[name="${name}"]:checked`) !== null;
+
+  // Helper : vérifier scale group
+  const scaleSelected = (groupId) => {
+    const group = document.getElementById(groupId);
+    return group && group.querySelector('.scale-btn.selected') !== null;
+  };
+
+  if (profile === 'patient') {
+    if (step === 1) {
+      const ageOk = radioChecked('fp_age');
+      const dureeEl = document.getElementById('fp-duree');
+      const dureeOk = dureeEl && dureeEl.value !== '';
+      setErr('fp-age-err', !ageOk);
+      setErr('fp-duree-err', !dureeOk);
+      if (!ageOk || !dureeOk) valid = false;
+    }
+    if (step === 2) {
+      const freqOk = radioChecked('fp_freq');
+      const hospiOk = radioChecked('fp_hospi');
+      setErr('fp-freq-err', !freqOk);
+      setErr('fp-hospi-err', !hospiOk);
+      if (!freqOk || !hospiOk) valid = false;
+    }
+    if (step === 3) {
+      const traitOk = radioChecked('fp_traitement');
+      setErr('fp-traitement-err', !traitOk);
+      if (!traitOk) valid = false;
+    }
+    if (step === 4) {
+      const interetOk = scaleSelected('fp-interet');
+      setErr('fp-interet-err', !interetOk);
+      if (!interetOk) valid = false;
+    }
+  }
+
+  if (profile === 'parent') {
+    if (step === 1) {
+      const lienOk = radioChecked('par_lien');
+      const freqOk = radioChecked('par_freq');
+      setErr('par-lien-err', !lienOk);
+      setErr('par-freq-err', !freqOk);
+      if (!lienOk || !freqOk) valid = false;
+    }
+    if (step === 2) {
+      const inqOk = scaleSelected('par-inquietude');
+      setErr('par-inquietude-err', !inqOk);
+      if (!inqOk) valid = false;
+    }
+    if (step === 3) {
+      const foncOk = radioChecked('par_fonc');
+      const achatOk = radioChecked('par_achat');
+      setErr('par-fonc-err', !foncOk);
+      setErr('par-achat-err', !achatOk);
+      if (!foncOk || !achatOk) valid = false;
+    }
+  }
+
+  if (profile === 'pro') {
+    if (step === 1) {
+      const specOk = radioChecked('pro_spec');
+      const expOk = radioChecked('pro_exp');
+      setErr('pro-spec-err', !specOk);
+      setErr('pro-exp-err', !expOk);
+      if (!specOk || !expOk) valid = false;
+    }
+    if (step === 2) {
+      const numOk = radioChecked('pro_num');
+      setErr('pro-numerique-err', !numOk);
+      if (!numOk) valid = false;
+    }
+    if (step === 3) {
+      const dashOk = radioChecked('pro_dash');
+      const npsOk = scaleSelected('pro-nps');
+      setErr('pro-dashboard-err', !dashOk);
+      setErr('pro-nps-err', !npsOk);
+      if (!dashOk || !npsOk) valid = false;
+    }
+  }
+
+  if (profile === 'curious') {
+    if (step === 1) {
+      const connaitOk = radioChecked('cur_connait');
+      const sourceOk = radioChecked('cur_source');
+      setErr('cur-connait-err', !connaitOk);
+      setErr('cur-source-err', !sourceOk);
+      if (!connaitOk || !sourceOk) valid = false;
+    }
+    if (step === 2) {
+      const avisOk = radioChecked('cur_avis');
+      const partageOk = radioChecked('cur_partage');
+      setErr('cur-avis-err', !avisOk);
+      setErr('cur-partage-err', !partageOk);
+      if (!avisOk || !partageOk) valid = false;
+    }
+  }
+
+  return valid;
+}
+
+/* ── Scale buttons ── */
+function selectScale(btn, groupId) {
+  const group = document.getElementById(groupId);
+  if (!group) return;
+  group.querySelectorAll('.scale-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+}
+
+/* ── Radio & Checkbox visual feedback ── */
+document.addEventListener('change', (e) => {
+  if (e.target.type === 'radio') {
+    // Désélectionner tous les items du même groupe dans le parent
+    const groupName = e.target.name;
+    document.querySelectorAll(`input[name="${groupName}"]`).forEach(inp => {
+      inp.closest('.radio-item')?.classList.remove('selected');
+    });
+    e.target.closest('.radio-item')?.classList.add('selected');
+  }
+  if (e.target.type === 'checkbox') {
+    e.target.closest('.check-item')?.classList.toggle('selected', e.target.checked);
+  }
+});
+
+</script>
+</body>
+</html>
